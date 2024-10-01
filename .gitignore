@@ -167,6 +167,13 @@ cython_debug/
 /code/data/metadata
 /code/data/logged
 
+# Addition by Ryan
+
+/data
+/metadata
+
+# End of Addition by Ryan
+
 *.jpeg
 *.svg
 *.png
