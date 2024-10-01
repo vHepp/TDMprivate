@@ -1,0 +1,24 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695315047169731001,,,,['OBJ_DETECTION']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695315100725854722,,,,['OBJ_DETECTION']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695315107074238124,,,,['ROUND_ABOUT']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,not detected/unknown,1695315287036437264,,,,"['TRAFFIC_LIGHT', 'UNKNOWN']"
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,stopped mid-road,1695315301778850070,,,,['UNKNOWN']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695315323696204786,,,,['UNKNOWN']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,firetrucks,1695315409725926736,,,,['OTHER']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695315499536313241,,,,['TRAFFIC_LIGHT']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695315565040149194,,,,"['LOCALIZATION', 'OBJ_DETECTION']"
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695315571670757863,,,,['ROUND_ABOUT']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695315618348375129,,,,['TRAFFIC_LIGHT']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695315632939195359,,,,['LOCALIZATION']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,stopping amidst traffic behind us,1695315720772877771,,,,['UNKNOWN']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695315749386597028,,,,['TRAFFIC_LIGHT']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695316055187398784,,,,
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695316128013433098,,,,
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695316155430531027,,,,
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,off road right-side,1695316245926060019,,,,"['NOT_DISENGAGEMENT', 'LOCALIZATION']"
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695316344097205041,,,,['LOCALIZATION']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695316410290756905,,,,
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,traffic module not working,1695316529543175764,,,,
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695316783173472840,,,,['RAILROAD']
+17876fec-ea66-11ee-b297-3b0ad9d5d6c6,,1695316801244644270,,,,['EOR']

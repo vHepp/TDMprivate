@@ -1,0 +1,8 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+f12112ba-f1c0-11ee-bada-fb353e7798cd,automatically deactivated,1708459388672524663,,,,['INTERSECTION']
+f12112ba-f1c0-11ee-bada-fb353e7798cd,over the edge line,1708459445697788796,,,,
+f12112ba-f1c0-11ee-bada-fb353e7798cd,"automatically deactivated, too close to edge line",1708459541091735189,,,,
+f12112ba-f1c0-11ee-bada-fb353e7798cd,automatically deactivated,1708459606862680138,,,,['UNKNOWN']
+f12112ba-f1c0-11ee-bada-fb353e7798cd,gps went to orange/red color,1708459678802104821,,,,
+f12112ba-f1c0-11ee-bada-fb353e7798cd,"brake 100%, went to continue on path and suddenly stopped",1708459801676596561,,,,['UNKNOWN']
+f12112ba-f1c0-11ee-bada-fb353e7798cd,,1708460128830005369,,,,['EOR']

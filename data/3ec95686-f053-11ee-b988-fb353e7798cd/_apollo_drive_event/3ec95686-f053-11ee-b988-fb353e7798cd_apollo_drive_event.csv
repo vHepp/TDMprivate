@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+3ec95686-f053-11ee-b988-fb353e7798cd,way over c/l,1694541763605722177,,,,"['LOCALIZATION', 'NOT_DISENGAGEMENT']"
+3ec95686-f053-11ee-b988-fb353e7798cd,,1694541776241755858,,,,['LOCALIZATION']
+3ec95686-f053-11ee-b988-fb353e7798cd,crosstraffic,1694542075674338136,,,,['OBJ_DETECTION']
+3ec95686-f053-11ee-b988-fb353e7798cd,unexpected stop no go,1694542088910066308,,,,"['INTERSECTION', 'UNKNOWN']"
+3ec95686-f053-11ee-b988-fb353e7798cd,floating/oscillation,1694542154466981832,,,,"['LOCALIZATION', 'NOT_DISENGAGEMENT']"
+3ec95686-f053-11ee-b988-fb353e7798cd,lost brake and accel not steering,1694542338207247034,,,,"['INTERSECTION', 'OTHER']"

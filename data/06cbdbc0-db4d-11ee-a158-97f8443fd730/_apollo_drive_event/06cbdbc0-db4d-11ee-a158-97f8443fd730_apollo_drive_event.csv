@@ -1,0 +1,6 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+06cbdbc0-db4d-11ee-a158-97f8443fd730,,1693494454927128163,,,,['ROUND_ABOUT']
+06cbdbc0-db4d-11ee-a158-97f8443fd730,,1693494513196759441,,,,['OBJ_DETECTION']
+06cbdbc0-db4d-11ee-a158-97f8443fd730,not going,1693494574247866224,,,,['OTHER']
+06cbdbc0-db4d-11ee-a158-97f8443fd730,,1693494674039904834,,,,['OBJ_DETECTION']
+06cbdbc0-db4d-11ee-a158-97f8443fd730,pedestrians,1693494832197623356,,,,['INTERSECTION']

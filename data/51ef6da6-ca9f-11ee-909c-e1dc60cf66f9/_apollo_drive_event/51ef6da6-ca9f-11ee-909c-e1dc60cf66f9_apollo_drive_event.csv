@@ -1,0 +1,12 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover for slowing down due to car passing,1696436596000000000,255,39.348036,-82.08322,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover for slowing down with car in front of us,1696436621000000000,272.1,39.351729666666664,-82.08843016666667,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,riding midline,1696437104000000000,247.5,39.398692,-82.05077283333334,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover going too fast with low accuracy,1696437116000000000,236.1,39.39919033333334,-82.04771833333334,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,need to reduce speed to 45 mph or lower here,1696437140000000000,216.4,39.401374,-82.04207216666667,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover riding midline while car was passing on other side,1696437235000000000,208.8,39.4006275,-82.02265983333334,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,over midline,1696437738000000000,218.5,39.353495,-81.97993983333333,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover too close to edgeline,1696437752000000000,206.3,39.35205783333333,-81.9792935,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover riding edgeline,1696437935000000000,196.6,39.3282705,-81.99251516666666,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover for slowing down as truck passed on our left,1696438218000000000,196.4,39.33170966666667,-82.05246,
+51ef6da6-ca9f-11ee-909c-e1dc60cf66f9,manual takeover slamming brakes as we engage,1696438271000000000,194.8,39.332545333333336,-82.06762266666667,

@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+f711e68e-f0e1-11ee-ba1f-fb353e7798cd,initial engagement refused by system,1701976412793882082,,,,
+f711e68e-f0e1-11ee-ba1f-fb353e7798cd,imu msg delay rec'd but did not disengage,1701976443527098806,,,,['NOT_DISENGAGEMENT']

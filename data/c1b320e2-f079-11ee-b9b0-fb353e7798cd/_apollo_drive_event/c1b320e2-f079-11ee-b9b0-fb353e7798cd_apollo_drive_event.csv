@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+c1b320e2-f079-11ee-b9b0-fb353e7798cd,excessive throttle and steering,1696529297235707874,,,,['OTHER']
+c1b320e2-f079-11ee-b9b0-fb353e7798cd,,1696529349947316771,,,,['LOCALIZATION']
+c1b320e2-f079-11ee-b9b0-fb353e7798cd,car pass from rear,1696529644609447905,,,,['OTHER']
+c1b320e2-f079-11ee-b9b0-fb353e7798cd,oscillation,1696529682285643398,,,,['NOT_DISENGAGEMENT']
+c1b320e2-f079-11ee-b9b0-fb353e7798cd,,1696529856992921077,,,,['LOCALIZATION']
+c1b320e2-f079-11ee-b9b0-fb353e7798cd,,1696529969557255937,,,,['EOR']

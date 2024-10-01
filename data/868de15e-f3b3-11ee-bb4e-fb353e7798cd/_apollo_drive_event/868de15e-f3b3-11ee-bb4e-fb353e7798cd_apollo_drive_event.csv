@@ -1,0 +1,13 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,,1708025514526008759,,,,['UNKNOWN']
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,over the edge line,1708025867926447936,,,,
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,touching centerline,1708026021664885819,,,,
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,close to center line w/ oncoming traffic,1708026309518219608,,,,['TRAFFIC_FAULT']
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,allowing passing car,1708026368135358591,,,,['INTENTIONAL']
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,,1708026731431765444,,,,['BY_MISTAKE']
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,,1708026761324395025,,,,['UNKNOWN']
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,kicked out by itself,1708026793260779459,,,,
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,crosswind caused system interference,1708026823957984274,,,,
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,too slow for exit ramp,1708027056700685195,,,,
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,too close to center line,1708027122214530320,,,,
+868de15e-f3b3-11ee-bb4e-fb353e7798cd,police on road side,1708027265586251995,,,,['INTENTIONAL']

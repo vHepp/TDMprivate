@@ -1,0 +1,18 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,,1702930780021310166,,,,['ROUND_ABOUT']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,fault upon disengagement with steering wheel,1702930810702337435,,,,
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,traffic in intersection,1702930993953017777,,,,['OTHER']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,delay for traffic resulted in midintersection light change,1702931034643358916,,,,['TRAFFIC_LIGHT']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,fault,1702931100098404691,,,,['UNKNOWN']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,large delay,1702931117688730404,,,,['UNKNOWN']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,snow ,1702931169864609079,,,,['OTHER']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,more snowy,1702931220668944461,,,,['OTHER']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,,1702931225162450610,,,,['OBJ_DETECTION']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,fault,1702931282536663302,,,,['UNKNOWN']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,pedestrian walking on shoulder not seen,1702931441767384370,,,,['NOT_DISENGAGEMENT']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,snow tapering off with blue sky visible thru clouds,1702931491813236200,,,,['OTHER']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,Fusion is the following vehicle,1702931861582900850,,,,
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,system,1702931964708619969,,,,['UNKNOWN']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,fault,1702931993381671681,,,,['UNKNOWN']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,system straight 2x,1702932295264331838,,,,['UNKNOWN']
+a7c98b32-ebc2-11ee-b297-3b0ad9d5d6c6,,1702932391745400895,,,,['RAILROAD']

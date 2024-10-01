@@ -1,0 +1,11 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,,1703694460479529187,,,,['ROUND_ABOUT']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,system u/k,1703694595179474609,,,,['UNKNOWN']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,vehicles parked over line,1703694735145224372,,,,['TRAFFIC_FAULT']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,sudden braking - ?traffic predicted to cross paths?,1703694771022879762,,,,['NOT_DISENGAGEMENT']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,curb check exiting roundabout,1703694792766070631,,,,['OTHER']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,system,1703694881160546038,,,,['UNKNOWN']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,driver engaged abs braking due to stopped traffic not yet detected at traffic light and slightly longer delay than typical,1703694959949400284,,,,['INTENTIONAL']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,initially stopped for traffic but more incoming as route planned and proceeded to accelerate,1703695610217375515,,,,['OBJ_DETECTION']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,,1703695950540671799,,,,['RAILROAD']
+df8e3742-ec54-11ee-b297-3b0ad9d5d6c6,,1703695974594171150,,,,['EOR']

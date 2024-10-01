@@ -1,0 +1,5 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+fe0395f0-f1ea-11ee-baf9-fb353e7798cd,,1691679030434731921,,,,['LOCALIZATION']
+fe0395f0-f1ea-11ee-baf9-fb353e7798cd,no signal,1691679576723614438,,,,['OTHER']
+fe0395f0-f1ea-11ee-baf9-fb353e7798cd,no signal,1691679627312211601,,,,['OTHER']
+fe0395f0-f1ea-11ee-baf9-fb353e7798cd,EOR,1691679705612135112,,,,['OTHER']

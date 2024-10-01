@@ -1,0 +1,25 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,,1695321889750086081,,,,['ROUND_ABOUT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,,1695322075250436172,,,,['OBJ_DETECTION']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,,1695322096092216341,,,,['OBJ_DETECTION']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,not climbing hill,1695322149272523109,,,,['OTHER']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,ped,1695322186098597086,,,,['UNKNOWN']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,traffic light red on hill with pedestrians,1695322231933014205,,,,['TRAFFIC_LIGHT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,line on route,1695322273479564211,,,,['UNKNOWN']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,,1695322280588464673,,,,['LOCALIZATION']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,check light display vs recognition,1695322406389619767,,,,['TRAFFIC_LIGHT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,traffic while turning,1695322510086105006,,,,"['LOCALIZATION', 'INTERSECTION']"
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,emergency vehicles approach from behind,1695322543645518486,,,,
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,bicycle on shoulder,1695322613291390028,,,,['OBJ_DETECTION']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,"school bus oncoming traffic - null event, just for reference",1695322655895872872,,,,
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,potential for crosstraffic to pull in front of us,1695322850163017356,,,,['NOT_DISENGAGEMENT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,car in front of us pulled left into turning lane and prediction was wonky,1695322910398975169,,,,['NOT_DISENGAGEMENT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,yellow light accelerate to clear intersection,1695323017903042901,,,,['TRAFFIC_LIGHT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,slow down for oncoming traffic,1695323034306768151,,,,['NOT_DISENGAGEMENT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,oncoming traffic at left hand turn,1695323051503503276,,,,['TRAFFIC_FAULT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,oncoming traffic in middle of the road,1695323096219051488,,,,['TRAFFIC_FAULT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,oncoming traffic,1695323141494918614,,,,['TRAFFIC_FAULT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,not re-engaging per following traffic at stop sign uphill,1695323199674737436,,,,['TRAFFIC_FAULT']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,truck in front not seen in time to stop for traffic at light,1695323346378412364,,,,['OBJ_DETECTION']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,golf cart on shoulder,1695323618306406170,,,,['OBJ_DETECTION']
+5fcc4fd8-ea71-11ee-b297-3b0ad9d5d6c6,,1695323627635050510,,,,['EOR']

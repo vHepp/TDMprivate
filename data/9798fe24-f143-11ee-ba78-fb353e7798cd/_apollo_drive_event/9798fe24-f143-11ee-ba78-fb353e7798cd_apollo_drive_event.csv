@@ -1,0 +1,12 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+9798fe24-f143-11ee-ba78-fb353e7798cd,c/l not disengagement,1705598954583130035,,,,['LOCALIZATION']
+9798fe24-f143-11ee-ba78-fb353e7798cd,system while steering correcting after yield,1705599162396527978,,,,['UNKNOWN']
+9798fe24-f143-11ee-ba78-fb353e7798cd,searching for road - not disengagement but close,1705599482918888831,,,,['LOCALIZATION']
+9798fe24-f143-11ee-ba78-fb353e7798cd,system on straight stretch,1705599666925522596,,,,['UNKNOWN']
+9798fe24-f143-11ee-ba78-fb353e7798cd,in anticipation of cross-traffic incoming,1705599717368880172,,,,['INTERSECTION']
+9798fe24-f143-11ee-ba78-fb353e7798cd,system delay on re-engagement 1x,1705599740626995194,,,,['OTHER']
+9798fe24-f143-11ee-ba78-fb353e7798cd,"float
+",1705599785920271367,,,,['LOCALIZATION']
+9798fe24-f143-11ee-ba78-fb353e7798cd,brakes for passing traffic,1705600009510126871,,,,['OBJ_DETECTION']
+9798fe24-f143-11ee-ba78-fb353e7798cd,system delay on re-engagement 1x,1705600082294283501,,,,['OTHER']
+9798fe24-f143-11ee-ba78-fb353e7798cd,,1705600183441799956,,,,['OTHER']

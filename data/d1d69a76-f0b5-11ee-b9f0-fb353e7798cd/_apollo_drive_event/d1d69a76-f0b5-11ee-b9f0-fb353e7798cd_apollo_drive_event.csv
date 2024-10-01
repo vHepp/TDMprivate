@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+d1d69a76-f0b5-11ee-b9f0-fb353e7798cd,dash light indicated loss of localizatio,1700584948715375304,,,,['LOCALIZATION']
+d1d69a76-f0b5-11ee-b9f0-fb353e7798cd,no loss of localization,1700584964034903741,,,,['LOCALIZATION']
+d1d69a76-f0b5-11ee-b9f0-fb353e7798cd,dash light green,1700584990402416613,,,,['LOCALIZATION']
+d1d69a76-f0b5-11ee-b9f0-fb353e7798cd,green LED 0.3 and rising,1700585010363153503,,,,['LOCALIZATION']
+d1d69a76-f0b5-11ee-b9f0-fb353e7798cd,traffic at yield turn,1700585403942812692,,,,['OBJ_DETECTION']
+d1d69a76-f0b5-11ee-b9f0-fb353e7798cd,lost light and it came back blinking,1700586364438359317,,,,['TRAFFIC_LIGHT']

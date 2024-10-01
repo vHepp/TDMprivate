@@ -1,0 +1,8 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+8adb6498-f04d-11ee-b981-fb353e7798cd,flaaoting at stop sign while stationary,1694535076978370665,,,,"['NOT_DISENGAGEMENT', 'LOCALIZATION']"
+8adb6498-f04d-11ee-b981-fb353e7798cd,stop gate for no object uphill,1694535130972934929,,,,"['NOT_DISENGAGEMENT', 'UNKNOWN']"
+8adb6498-f04d-11ee-b981-fb353e7798cd,unexpected braking,1694535423038359195,,,,"['UNKNOWN', 'INTERSECTION']"
+8adb6498-f04d-11ee-b981-fb353e7798cd,lost brake and accel kept steering and executed turn,1694535664793106688,,,,['OTHER']
+8adb6498-f04d-11ee-b981-fb353e7798cd,crossed c/l,1694535703485105461,,,,['LOCALIZATION']
+8adb6498-f04d-11ee-b981-fb353e7798cd,,1694535709951978339,,,,['LOCALIZATION']
+8adb6498-f04d-11ee-b981-fb353e7798cd,,1694535793413391443,,,,['EOR']

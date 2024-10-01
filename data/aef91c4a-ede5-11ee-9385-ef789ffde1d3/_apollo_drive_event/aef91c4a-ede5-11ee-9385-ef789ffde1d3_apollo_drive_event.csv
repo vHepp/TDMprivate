@@ -1,0 +1,18 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,drifting toward ctr ln,1697726062252171748,,,,"['LOCALIZATION', 'UNKNOWN']"
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,fault,1697726105043479253,,,,['ROUND_ABOUT']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,fault,1697726119671722021,,,,['UNKNOWN']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,cars parking,1697726250526628670,,,,['TRAFFIC_FAULT']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,ped safety,1697726408092265279,,,,['INTERSECTION']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,parked cars,1697726484507240641,,,,['TRAFFIC_FAULT']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,parked cars and ped,1697726504454462754,,,,['TRAFFIC_FAULT']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,,1697726511954066482,,,,['ROUND_ABOUT']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,ped xing with traffic in front of van,1697726630577539194,,,,['OBJ_DETECTION']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,wide turn map err,1697726734239124863,,,,['INTERSECTION']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,heading twd ctr ln and oncoming traffic,1697726936968972094,,,,['UNKNOWN']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,light not detected,1697727141540956683,,,,['TRAFFIC_LIGHT']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,"safety - combo of stop, traffic, localization",1697727336171597329,,,,['INTERSECTION']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,ctr ln,1697727344933334314,,,,['LOCALIZATION']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,light not seen after camera jump,1697727381124336291,,,,['TRAFFIC_LIGHT']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,,1697727718955928445,,,,['RAILROAD']
+aef91c4a-ede5-11ee-9385-ef789ffde1d3,,1697727727640395707,,,,['EOR']

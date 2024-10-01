@@ -1,0 +1,5 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+f570c51c-f15d-11ee-ba91-fb353e7798cd,stop sign,1706634117461471525,,,,['INTERSECTION']
+f570c51c-f15d-11ee-ba91-fb353e7798cd,,1706634279445216731,,,,['UNKNOWN']
+f570c51c-f15d-11ee-ba91-fb353e7798cd,,1706634325941267418,,,,['UNKNOWN']
+f570c51c-f15d-11ee-ba91-fb353e7798cd,,1706634453033539044,,,,"['INTERSECTION', 'TRAFFIC_FAULT']"

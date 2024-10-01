@@ -1,0 +1,14 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,0.05 green OK,1701372087780419447,,,,['NOT_DISENGAGEMENT']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,system -no fault- rolled forward started to turn wheel and then go,1701372158964725646,,,,['UNKNOWN']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,0.8 green OK,1701372188414321996,,,,['NOT_DISENGAGEMENT']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,van2 disengaged here repeated event,1701372265072066878,,,,['NOT_DISENGAGEMENT']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,"0.2 green OK ""float""",1701372297325516647,,,,['LOCALIZATION']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,stop sign executed successfully,1701372493535260713,,,,['INTERSECTION']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,oscillation on hwy,1701372552656301862,,,,"['LOCALIZATION', 'UNKNOWN']"
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,no known reason,1701372671018614419,,,,['UNKNOWN']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,no idea ,1701372698280681336,,,,['UNKNOWN']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,think the turn was too much,1701372707254709163,,,,['UNKNOWN']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,wouldn't reengage,1701372714166271086,,,,['UNKNOWN']
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,0.48 green WARN,1701372795976287101,,,,
+b3ee0dd8-f0d7-11ee-ba18-fb353e7798cd,0.45 green WARN,1701372812908402317,,,,

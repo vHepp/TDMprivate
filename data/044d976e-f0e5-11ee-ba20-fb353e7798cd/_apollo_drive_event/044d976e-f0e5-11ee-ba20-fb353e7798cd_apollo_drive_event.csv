@@ -1,0 +1,5 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+044d976e-f0e5-11ee-ba20-fb353e7798cd,system at stop sign,1703708368631049363,,,,['UNKNOWN']
+044d976e-f0e5-11ee-ba20-fb353e7798cd,re-engagement failed 1x 3beeps,1703708395753601313,,,,['OTHER']
+044d976e-f0e5-11ee-ba20-fb353e7798cd,,1703708428489549555,,,,['LOCALIZATION']
+044d976e-f0e5-11ee-ba20-fb353e7798cd,cross traffic not seen at time of route planning,1703708741205975588,,,,['TRAFFIC_FAULT']

@@ -1,0 +1,16 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,float,1702320409802260876,,,,['NOT_DISENGAGEMENT']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,c/l,1702320597490762393,,,,['NOT_DISENGAGEMENT']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,float,1702320606037490302,,,,['NOT_DISENGAGEMENT']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,c/l,1702320717687034876,,,,['NOT_DISENGAGEMENT']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,"broken red planning line, no notable vehicle behavior change",1702320790865222783,,,,['NOT_DISENGAGEMENT']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,c/l,1702320850547336236,,,,['NOT_DISENGAGEMENT']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,car approaching yield intersection,1702320943507090371,,,,['INTERSECTION']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,intentional disengagement and re-engagement,1702320971265262806,,,,
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,it,1702320980372036370,,,,
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,it,1702320984398784165,,,,
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,intentional due to vehicle overtaking van,1702321091606303084,,,,['TRAFFIC_FAULT']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,oncoming traffic on c/l,1702321222934838397,,,,['LOCALIZATION']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,traffic conditions prompted takeover,1702321496538246678,,,,['INTERSECTION']
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,re-engagment failed 4x,1702321515519635700,,,,
+d21965e6-f0fa-11ee-ba37-fb353e7798cd,float,1702321524221484444,,,,['NOT_DISENGAGEMENT']

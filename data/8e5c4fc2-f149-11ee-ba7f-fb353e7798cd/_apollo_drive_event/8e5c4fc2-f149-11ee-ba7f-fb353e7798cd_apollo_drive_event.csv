@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+8e5c4fc2-f149-11ee-ba7f-fb353e7798cd,stop sign,1706630326791627011,,,,['INTERSECTION']
+8e5c4fc2-f149-11ee-ba7f-fb353e7798cd,,1706630676110534107,,,,['UNKNOWN']

@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+3950298e-f1b4-11ee-bad3-fb353e7798cd,pickup truck pulling trailer stopped on shoulder,1706548227960651317,,,,['OBJ_DETECTION']
+3950298e-f1b4-11ee-bad3-fb353e7798cd,delivery truck stopped half on other shoulder,1706548305486157630,,,,['OBJ_DETECTION']

@@ -1,0 +1,17 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+39ba7438-d0d5-11ee-9435-f7e542e2436c,ndabtrout,1689271034096901142,,,,['DESIRED']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,redgate,1689271163897965277,,,,['DESIRED']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,cone,1689271243061745225,,,,['PROBLEM']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,cone iiiinside the lane,1689271289034431539,,,,"['PROBLEM', 'DESIRED']"
+39ba7438-d0d5-11ee-9435-f7e542e2436c,weon curb,1689271358162871854,,,,['CRITICAL']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,need to  be slow,1689271396044635755,,,,['DESIRED']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,late switch camera,1689271456934574492,,,,['PROBLEM']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,taking off near the traffic light at red,1689271632111212361,,,,['CRITICAL']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,Railroad cross,1689271676657608902,,,,['DESIRED']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,no left turn signal and did nt detect oncoming traffic,1689272161464927146,,,,['CRITICAL']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,narrow road,1689272190103727838,,,,['OUT_OF_SCOPE']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,disengaged for raddicle behaviour and slammed the brakes after disengaging,1689272311512716476,,,,['CRITICAL']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,it almost drive through the traffic light,1689272384238598320,,,,['CRITICAL']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,not stopping for car,1689272504001491467,,,,['CRITICAL']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,2,1689272591420471927,,,,['CRITICAL']
+39ba7438-d0d5-11ee-9435-f7e542e2436c,2,1689272721960709846,,,,['PROBLEM']

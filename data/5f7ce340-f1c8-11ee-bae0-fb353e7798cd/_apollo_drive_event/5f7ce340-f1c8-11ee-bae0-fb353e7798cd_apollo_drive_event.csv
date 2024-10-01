@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+5f7ce340-f1c8-11ee-bae0-fb353e7798cd,automatically deactivated,1708460731785253776,,,,['UNKNOWN']
+5f7ce340-f1c8-11ee-bae0-fb353e7798cd,over the edge line,1708460797450294095,,,,
+5f7ce340-f1c8-11ee-bae0-fb353e7798cd,automatically deactivated,1708460897748751764,,,,['UNKNOWN']
+5f7ce340-f1c8-11ee-bae0-fb353e7798cd,gps went to orange,1708461324835560571,,,,
+5f7ce340-f1c8-11ee-bae0-fb353e7798cd,gps went to orange,1708461377724145161,,,,
+5f7ce340-f1c8-11ee-bae0-fb353e7798cd,went over edge line,1708461427491824153,,,,

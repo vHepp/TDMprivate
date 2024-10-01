@@ -1,0 +1,13 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,,1702928772315811387,,,,['ROUND_ABOUT']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,3beeps not engaged,1702928803540674178,,,,['OTHER']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,parked cars over line,1702928923240879050,,,,['TRAFFIC_FAULT']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,takes curve wide,1702929056277870331,,,,['OTHER']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,path shifted to the right in close proximity to parked cars,1702929099867480930,,,,['OTHER']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,wide turn,1702929322379027266,,,,['OTHER']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,school bus,1702929391260166959,,,,['OTHER']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,oncoming traffic on narrow road,1702929920566904490,,,,['TRAFFIC_FAULT']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,,1702929946528692519,,,,['INTERSECTION']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,,1702930021729211487,,,,['INTERSECTION']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,,1702930403469382420,,,,['RAILROAD']
+af10e22a-ebb1-11ee-b297-3b0ad9d5d6c6,,1702930422485569994,,,,['EOR']

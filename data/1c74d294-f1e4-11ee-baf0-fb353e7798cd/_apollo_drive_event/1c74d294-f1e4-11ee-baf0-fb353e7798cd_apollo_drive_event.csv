@@ -1,0 +1,11 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,system disengagement,1708635300126197566,,,,['OTHER']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,1x failed re-engagement,1708635309766985033,,,,['OTHER']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,c/l w/ opposing traffic present,1708635339567985864,,,,['LOCALIZATION']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,,1708635421916326282,,,,['UNKNOWN']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,1x failed re-engagement due to delay from actuation until system response (drift in meantime to off-path and over-correction by steering rate),1708635479954398641,,,,['OTHER']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,"""float""",1708635492367899053,,,,['OTHER']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,,1708635637497833604,,,,['UNKNOWN']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,imminent collision detected by van,1708635903291698669,,,,['OBJ_DETECTION']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,deer jumping over fence in field,1708635914705291155,,,,['NOT_DISENGAGEMENT']
+1c74d294-f1e4-11ee-baf0-fb353e7798cd,,1708636005362954129,,,,['EOR']

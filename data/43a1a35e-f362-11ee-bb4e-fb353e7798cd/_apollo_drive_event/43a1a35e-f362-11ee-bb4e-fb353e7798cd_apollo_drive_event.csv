@@ -1,0 +1,4 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+43a1a35e-f362-11ee-bb4e-fb353e7798cd,pull over to allow traffic to pass,1707416318526557561,,,,['INTENTIONAL']
+43a1a35e-f362-11ee-bb4e-fb353e7798cd,traffic considerations override van procedures at stop sign,1707416868533930102,,,,['INTERSECTION']
+43a1a35e-f362-11ee-bb4e-fb353e7798cd,due to surrounding traffic at off ramp and relatively slow speeds programmed,1707417139318884943,,,,['INTENTIONAL']

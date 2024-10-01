@@ -1,0 +1,22 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,would not engage,1701805496992594786,,,,['UNKNOWN']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,system off path and steering rate ,1701805591778853955,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,system,1701805704595098434,,,,['LOCALIZATION']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,wouldn't engage,1701805730798811632,,,,['UNKNOWN']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,in-curve disengagement required manual correction to maintain proper course,1701805822605905208,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,system - straight line blue led,1701805901282830159,,,,['UNKNOWN']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,off path correction,1701805917462549720,,,,
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,wouldn't engage,1701805927703747361,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,c/l,1701805943250352663,,,,['LOCALIZATION']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,,1701805956559860118,,,,['UNKNOWN']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,system,1701806031816549131,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,,1701806173458286759,,,,['UNKNOWN']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,wouldn't reengage,1701806188012735016,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,correction upon engagement,1701806203021883500,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,system in-turn,1701806396349502812,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,engaged ok,1701806431548558573,,,,['LOCALIZATION']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,0.7 yellow led,1701806449698707749,,,,
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,float torwards c/l,1701806470494574072,,,,['OBJ_DETECTION']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,"system engaged and kicked back out, didn't seem to correct steering, straight line, no traffic on hwy",1701806703478305560,,,,['OTHER']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,object NOT detected in front - black tacoma,1701806773828148042,,,,['OBJ_DETECTION']
+dd72fdec-f0cf-11ee-ba0d-fb353e7798cd,,1701807194101372284,,,,['EOR']

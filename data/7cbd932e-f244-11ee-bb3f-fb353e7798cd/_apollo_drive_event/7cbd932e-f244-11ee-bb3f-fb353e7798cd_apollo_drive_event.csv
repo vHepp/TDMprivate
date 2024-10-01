@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+7cbd932e-f244-11ee-bb3f-fb353e7798cd,system,1707249413447701798,,,,['UNKNOWN']
+7cbd932e-f244-11ee-bb3f-fb353e7798cd,,1707249926754834134,,,,['INTERSECTION']
+7cbd932e-f244-11ee-bb3f-fb353e7798cd,engagement delay,1707249947731203787,,,,
+7cbd932e-f244-11ee-bb3f-fb353e7798cd,driver initiated,1707250058898761461,,,,['OBJ_DETECTION']
+7cbd932e-f244-11ee-bb3f-fb353e7798cd,oscillation,1707250084599397184,,,,['LOCALIZATION']
+7cbd932e-f244-11ee-bb3f-fb353e7798cd,offramp,1707250215046284460,,,,['OTHER']

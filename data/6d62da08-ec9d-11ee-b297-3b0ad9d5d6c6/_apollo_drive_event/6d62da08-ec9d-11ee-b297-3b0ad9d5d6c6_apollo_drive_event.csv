@@ -1,0 +1,13 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,,1704397868609395887,,,,['ROUND_ABOUT']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,stop gate at green light,1704398124583122305,,,,['UNKNOWN']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,was almost ran off road by car.,1704398200388179048,,,,['TRAFFIC_FAULT']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,cars stopped at traffic light,1704398403820139301,,,,"['TRAFFIC_FAULT', 'OBJ_DETECTION']"
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,did not straighten out after right turn,1704398575662717624,,,,['UNKNOWN']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,did not stop for slowing traffic,1704398863922162810,,,,['OBJ_DETECTION']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,vehicle past top bar,1704398920139115357,,,,['TRAFFIC_FAULT']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,oncoming traffic,1704398948018594387,,,,['TRAFFIC_FAULT']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,oncoming traffic,1704398983959377552,,,,['TRAFFIC_FAULT']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,did not see slowing traffic,1704399251451699464,,,,['OBJ_DETECTION']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,,1704399474208075965,,,,['RAILROAD']
+6d62da08-ec9d-11ee-b297-3b0ad9d5d6c6,,1704399478740005897,,,,['EOR']

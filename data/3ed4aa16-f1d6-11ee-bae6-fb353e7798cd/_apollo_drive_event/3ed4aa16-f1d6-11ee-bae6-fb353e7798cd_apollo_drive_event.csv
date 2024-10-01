@@ -1,0 +1,8 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+3ed4aa16-f1d6-11ee-bae6-fb353e7798cd,severe correction for overshooting stop,1708633489068622692,,,,['OTHER']
+3ed4aa16-f1d6-11ee-bae6-fb353e7798cd,probably driver disengagement for consideration of oncoming traffic,1708633561912980813,,,,['OTHER']
+3ed4aa16-f1d6-11ee-bae6-fb353e7798cd,drifted to the right towards shoulder,1708633959743974838,,,,['UNKNOWN']
+3ed4aa16-f1d6-11ee-bae6-fb353e7798cd,failed re-engagement due to delay between button actuation and system response,1708633996203719160,,,,['OTHER']
+3ed4aa16-f1d6-11ee-bae6-fb353e7798cd,,1708634011184898520,,,,['UNKNOWN']
+3ed4aa16-f1d6-11ee-bae6-fb353e7798cd,truck parked alongside road,1708634054056114512,,,,['OBJ_DETECTION']
+3ed4aa16-f1d6-11ee-bae6-fb353e7798cd,,1708634176108361498,,,,['EOR']

@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+961fd9cc-f103-11ee-ba3f-fb353e7798cd,automatically cutout,1704824292027418721,,,,['UNKNOWN']
+961fd9cc-f103-11ee-ba3f-fb353e7798cd,passed a backhoe loader,1704824365214682333,,,,
+961fd9cc-f103-11ee-ba3f-fb353e7798cd,automatically disengaged. ,1704824428346706141,,,,['UNKNOWN']
+961fd9cc-f103-11ee-ba3f-fb353e7798cd,oncoming traffic,1704824602449683579,,,,['INTERSECTION']
+961fd9cc-f103-11ee-ba3f-fb353e7798cd,brake event,1704824651630871429,,,,['UNKNOWN']
+961fd9cc-f103-11ee-ba3f-fb353e7798cd,automatic disengagement,1704824815859348482,,,,['UNKNOWN']
