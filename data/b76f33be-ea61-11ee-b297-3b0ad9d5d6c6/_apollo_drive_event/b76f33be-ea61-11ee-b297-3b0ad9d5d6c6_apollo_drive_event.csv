@@ -1,0 +1,14 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,wandering straight into oncoming traffic,1695312559795386297,,,,"['LOCALIZATION', 'OBJ_DETECTION']"
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,,1695312624321995413,,,,['ROUND_ABOUT']
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,,1695312726882810871,,,,"['LOCALIZATION', 'OBJ_DETECTION']"
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,no go on green peds present,1695312764627223659,,,,['TRAFFIC_LIGHT']
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,,1695312787092156850,,,,"['OBJ_DETECTION', 'TRAFFIC_LIGHT']"
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,lot of peds,1695312838464814778,,,,['NOT_DISENGAGEMENT']
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,parked car over line,1695312866051490147,,,,['OBJ_DETECTION']
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,,1695312883219308597,,,,['TRAFFIC_FAULT']
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,ped?,1695312908860169814,,,,"['TRAFFIC_LIGHT', 'UNKNOWN']"
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,no go at green light,1695312960628700258,,,,
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,,1695313000914557150,,,,"['OBJ_DETECTION', 'INTERSECTION']"
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,ped trajectory predicted towards van,1695313162275218811,,,,['NOT_DISENGAGEMENT']
+b76f33be-ea61-11ee-b297-3b0ad9d5d6c6,,1695313238705855576,,,,['EOR']

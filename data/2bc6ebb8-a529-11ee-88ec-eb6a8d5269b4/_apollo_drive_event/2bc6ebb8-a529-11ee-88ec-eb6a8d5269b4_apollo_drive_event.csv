@@ -1,0 +1,13 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,accidental takeover,1696265671000000000,214.4,39.380002,-82.13575583333333,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover to turn with oncoming cars ,1696265750000000000,201.9,39.387585666666666,-82.13994816666667,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover to turn at intersection,1696265909000000000,179.1,39.37747233333333,-82.1422355,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover at light when car tried to turn in front of us,1696266005000000000,217.7,39.378271833333336,-82.13562666666667,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover after losing green light and trying to stop,1696266075000000000,221,39.369612,-82.13249266666666,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover at railroad tracks,1696266360000000000,204.5,39.3324555,-82.1307685,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover at roundabout,1696266530000000000,196.5,39.32029933333333,-82.10703166666667,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover to end route,1696266588000000000,193.3,39.322475,-82.104491,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover to get around cars,1696266672000000000,219.8,39.327857,-82.101327,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,speed on court feels too fast at 20 mph,1696266713000000000,224.2,39.329067,-82.10123016666667,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover for guy standing in road,1696267043000000000,201.1,39.3303135,-82.11905766666666,
+2bc6ebb8-a529-11ee-88ec-eb6a8d5269b4,manual takeover system thought car was going to come into our lane,1696267126000000000,203.9,39.3304005,-82.12729116666667,

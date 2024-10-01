@@ -105,6 +105,54 @@ def ChassisBestPoseMatchedTime( same_gmID_chassis_df, same_gmID_best_pose_df ):
     same_gmID_best_pose_df[ 'ChassisBestPoseMatchedTime' ] = same_gmID_best_pose_df[ 'time' ]
 
 
+# In[1]:
+
+
+def NormalizedTime( chassis_df ):
+
+    chassis_time_array = np.array( chassis_df[ 'time' ] )
+
+    normalized_chassis_time_array = chassis_time_array - np.min( chassis_time_array )
+
+    chassis_df[ 'NormalizedTime' ] = list( normalized_chassis_time_array )
+
+
+# In[4]:
+
+
+def DeltaTime( time_sorted_chassis_df ):
+
+    chassis_time_array = np.array( time_sorted_chassis_df[ 'time' ] )
+
+    chassis_delta_time_array = np.diff( chassis_time_array )
+
+    chassis_delta_time_list = list( chassis_delta_time_array )
+
+    chassis_delta_time_list = [ chassis_delta_time_list[ 0 ] ] + chassis_delta_time_list
+
+    time_sorted_chassis_df[ 'DeltaTime' ] = chassis_delta_time_list
+
+
+# In[3]:
+
+
+def Distance( time_sorted_chassis_df ):
+
+    chassis_DeltaTime_array = np.array( time_sorted_chassis_df[ 'DeltaTime' ] ) * 1e-9 # seconds
+
+    chassis_speedMps_array = np.array( time_sorted_chassis_df[ 'speedMps' ] ) # meters/second
+
+    chassis_Distance_list = [] # meters
+
+    for index in range( len( chassis_DeltaTime_array ) ):
+
+        current_index_Distance = np.sum( chassis_DeltaTime_array[ : index ] * chassis_speedMps_array[ : index ] )
+
+        chassis_Distance_list.append( current_index_Distance )
+
+    time_sorted_chassis_df[ 'Distance' ] = chassis_Distance_list
+
+
 # In[ ]:
 
 

@@ -1,0 +1,8 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+61b12e7a-f234-11ee-bb33-fb353e7798cd,centerline,1706816106870186159,,,,['LOCALIZATION']
+61b12e7a-f234-11ee-bb33-fb353e7798cd,oncoming truck,1706816371300517342,,,,['INTENTIONAL']
+61b12e7a-f234-11ee-bb33-fb353e7798cd,oncoming traffic,1706816600684275202,,,,['INTENTIONAL']
+61b12e7a-f234-11ee-bb33-fb353e7798cd,oncoming traffic,1706816734015701432,,,,['INTENTIONAL']
+61b12e7a-f234-11ee-bb33-fb353e7798cd,,1706816979055576660,,,,"['TRAFFIC_FAULT', 'INTENTIONAL']"
+61b12e7a-f234-11ee-bb33-fb353e7798cd,,1706817024016947914,,,,['TRAFFIC_FAULT']
+61b12e7a-f234-11ee-bb33-fb353e7798cd,,1706817193517186279,,,,['OTHER']

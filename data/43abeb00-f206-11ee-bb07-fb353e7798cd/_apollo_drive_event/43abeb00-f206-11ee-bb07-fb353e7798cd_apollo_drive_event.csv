@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+43abeb00-f206-11ee-bb07-fb353e7798cd,,1691685192198999028,,,,['OBJ_DETECTION']
+43abeb00-f206-11ee-bb07-fb353e7798cd,EOR,1691685532088411791,,,,['OTHER']

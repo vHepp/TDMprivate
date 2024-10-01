@@ -1,0 +1,6 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+a6539bd2-cb72-11ee-909c-e1dc60cf66f9,"manual takeover at intersection, took turn too sharp and slammed on brakes",1696532656000000000,241.4,39.289025,-82.46741833333333,
+a6539bd2-cb72-11ee-909c-e1dc60cf66f9,manual takeover slammed on brakes during engagement,1696532699000000000,250.9,39.292819333333334,-82.46725966666666,
+a6539bd2-cb72-11ee-909c-e1dc60cf66f9,manual takeover slammed on brakes during engagement,1696532766000000000,226.5,39.30632683333333,-82.46594566666667,
+a6539bd2-cb72-11ee-909c-e1dc60cf66f9,manual takeover slammed on brakes during engagement,1696532940000000000,224.3,39.3318975,-82.45393066666666,
+a6539bd2-cb72-11ee-909c-e1dc60cf66f9,manual takeover to end route,1696533071000000000,279.4,39.327241,-82.44052033333334,

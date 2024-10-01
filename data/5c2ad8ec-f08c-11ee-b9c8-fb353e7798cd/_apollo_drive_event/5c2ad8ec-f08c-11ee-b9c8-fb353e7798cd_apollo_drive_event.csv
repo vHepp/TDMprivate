@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+5c2ad8ec-f08c-11ee-b9c8-fb353e7798cd,following vehicle pulling a trailer,1700155311810086208,,,,['OBJ_DETECTION']
+5c2ad8ec-f08c-11ee-b9c8-fb353e7798cd,lane change for vehicle broken down on the shoulder with law enforcement presence,1700156065651413150,,,,

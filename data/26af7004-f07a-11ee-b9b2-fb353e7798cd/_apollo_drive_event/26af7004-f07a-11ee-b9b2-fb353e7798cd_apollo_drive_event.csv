@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+26af7004-f07a-11ee-b9b2-fb353e7798cd,"following car just going in/out of range of detection
+",1699386205295340614,,,,['OBJ_DETECTION']
+26af7004-f07a-11ee-b9b2-fb353e7798cd,vehicle following,1699386241292186241,,,,['OBJ_DETECTION']
+26af7004-f07a-11ee-b9b2-fb353e7798cd,red route lines abnormal (see screenshots),1699386367694640669,,,,['UNKNOWN']
+26af7004-f07a-11ee-b9b2-fb353e7798cd,vehicles at multiple corners of yield intersection,1699386453155496119,,,,['OBJ_DETECTION']
+26af7004-f07a-11ee-b9b2-fb353e7798cd,one-lane road for  utility work,1699386503233260013,,,,['TRAFFIC_FAULT']

@@ -1,0 +1,11 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,fault and system failure and disenegagement after re-engage,1701197039971702159,,,,['UNKNOWN']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,c/l,1701197058057663570,,,,['LOCALIZATION']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,c/l,1701197189462759980,,,,['LOCALIZATION']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,c/l taking curve wide,1701197292804629011,,,,['LOCALIZATION']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,fault and system failure,1701197364439246820,,,,['UNKNOWN']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,took the curve after the stop,1701197386839434753,,,,['NOT_DISENGAGEMENT']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,debris in road (plastic bag),1701197590906724964,,,,['INTENTIONAL']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,c/l,1701197608101270175,,,,['LOCALIZATION']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,oncoming traffic may have been system or driver,1701197686955451604,,,,['UNKNOWN']
+f8fd0fd8-f243-11ee-bb3f-fb353e7798cd,,1701197724644016648,,,,['EOR']

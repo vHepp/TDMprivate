@@ -1,0 +1,19 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+b82476fe-f1f3-11ee-baff-fb353e7798cd,truck and trailer stopped on shoulder,1706801752876552631,,,,['OBJ_DETECTION']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,wobblies,1706801858057400937,,,,['OTHER']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,"turning traffic out of range not detected, delay in display",1706801912599471280,,,,['OBJ_DETECTION']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,mid-curve,1706801926146479457,,,,['UNKNOWN']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,oscillation,1706802115446439030,,,,['OTHER']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,c/l,1706802219523126992,,,,['LOCALIZATION']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,passing traffic,1706802241979812599,,,,['UNKNOWN']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,"failed re-engagement (also at initial start, not previously recorded)",1706802286822486588,,,,
+b82476fe-f1f3-11ee-baff-fb353e7798cd,allowing traffic to pass,1706802745409007143,,,,['INTENTIONAL']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,failed re-engagement 4x,1706802772657679377,,,,
+b82476fe-f1f3-11ee-baff-fb353e7798cd,c/l,1706802782148060146,,,,['LOCALIZATION']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,c/l,1706802829430540116,,,,['LOCALIZATION']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,system mid-turn,1706802856791386051,,,,['OTHER']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,oncoming large truck and questionable lane centerring,1706802972588578001,,,,['INTENTIONAL']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,"passing traffic merged in front, van slammed on brakes but there was a vehicle behind (2x)",1706803145614631591,,,,['INTENTIONAL']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,stop gate for car in front while followed by car behind,1706803447777091582,,,,['INTENTIONAL']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,cross-traffic green light briefly recognized as correct light,1706803517165777889,,,,['TRAFFIC_LIGHT']
+b82476fe-f1f3-11ee-baff-fb353e7798cd,,1706803521365344465,,,,['EOR']

@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+a6895b74-f1cd-11ee-bae2-fb353e7798cd,passing slow traffic,1706554140081830156,,,,['TRAFFIC_FAULT']
+a6895b74-f1cd-11ee-bae2-fb353e7798cd,decision uncertain between which direction traffic light to apply,1706555310443443872,,,,['TRAFFIC_LIGHT']

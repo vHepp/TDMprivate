@@ -1,0 +1,5 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+848e44a6-f134-11ee-ba6d-fb353e7798cd,tighter turn,1705947485572904178,,,,['UNKNOWN']
+848e44a6-f134-11ee-ba6d-fb353e7798cd,disngaged near the turn,1705947555973222311,,,,['UNKNOWN']
+848e44a6-f134-11ee-ba6d-fb353e7798cd,,1705947818688419563,,,,['INTERSECTION']
+848e44a6-f134-11ee-ba6d-fb353e7798cd,,1705948159325126926,,,,['EOR']

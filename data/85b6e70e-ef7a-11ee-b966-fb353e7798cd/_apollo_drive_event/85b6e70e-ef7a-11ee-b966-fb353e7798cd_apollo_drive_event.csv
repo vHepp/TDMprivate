@@ -1,0 +1,12 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,,1692380989722498701,,,,['LOCALIZATION']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,stop gate,1692381465220319408,,,,['OBJ_DETECTION']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,,1692381640853970440,,,,['LOCALIZATION']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,no GPS,1692381713503672237,,,,['LOCALIZATION']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,,1692381770525315177,,,,['LOCALIZATION']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,going over the speed limit and racing the other car,1692381931934167515,,,,['OTHER']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,lost all throttle,1692382003978823478,,,,['UNKNOWN']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,exit closed,1692382138989222080,,,,['OTHER']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,,1692382599645370507,,,,['OBJ_DETECTION']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,"issue with the map, throwingto the right",1692382721993889428,,,,['OTHER']
+85b6e70e-ef7a-11ee-b966-fb353e7798cd,end of route,1692382730839395790,,,,

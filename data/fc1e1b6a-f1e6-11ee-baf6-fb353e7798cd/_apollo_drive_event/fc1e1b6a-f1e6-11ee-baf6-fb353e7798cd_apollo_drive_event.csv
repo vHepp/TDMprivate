@@ -1,0 +1,2 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+fc1e1b6a-f1e6-11ee-baf6-fb353e7798cd,school bus stopped on other side,1706558186100799861,,,,['TRAFFIC_FAULT']

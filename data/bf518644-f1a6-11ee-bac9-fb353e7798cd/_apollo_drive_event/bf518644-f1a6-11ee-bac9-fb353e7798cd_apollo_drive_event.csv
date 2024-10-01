@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+bf518644-f1a6-11ee-bac9-fb353e7798cd,hwy patrol on shoulder,1706545516114333314,,,,['OBJ_DETECTION']
+bf518644-f1a6-11ee-bac9-fb353e7798cd,raindrops on the windshield,1706546181975720062,,,,['NOT_DISENGAGEMENT']

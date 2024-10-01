@@ -1,0 +1,9 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,over cl,1694532556000041793,,,,['NOT_DISENGAGEMENT']
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,to the ditch r/s,1694532569623279879,,,,['LOCALIZATION']
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,stop gate unknown obj not seen brake activated,1694532720588750988,,,,"['NOT_DISENGAGEMENT', 'OBJ_DETECTION']"
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,crosstraffic not seeen,1694532853682253419,,,,['INTERSECTION']
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,,1694532870358831208,,,,"['INTERSECTION', 'UNKNOWN']"
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,,1694533096325286529,,,,['LOCALIZATION']
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,,1694533129874731085,,,,['LOCALIZATION']
+3a7dc9a6-f042-11ee-b974-fb353e7798cd,,1694533216015176263,,,,['EOR']

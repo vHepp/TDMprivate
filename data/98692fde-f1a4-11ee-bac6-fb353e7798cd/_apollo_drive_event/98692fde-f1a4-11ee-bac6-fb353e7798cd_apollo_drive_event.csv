@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+98692fde-f1a4-11ee-bac6-fb353e7798cd,deactivated by itself ,1708454321859178750,,,,['INTERSECTION']
+98692fde-f1a4-11ee-bac6-fb353e7798cd,close to white line,1708454371249927790,,,,
+98692fde-f1a4-11ee-bac6-fb353e7798cd,over edge line,1708454426160241082,,,,
+98692fde-f1a4-11ee-bac6-fb353e7798cd,over edge line,1708454513145472247,,,,
+98692fde-f1a4-11ee-bac6-fb353e7798cd,road blocked by traffic,1708454598480228383,,,,"['INTENTIONAL', 'TRAFFIC_FAULT']"
+98692fde-f1a4-11ee-bac6-fb353e7798cd,,1708455010046776371,,,,['EOR']

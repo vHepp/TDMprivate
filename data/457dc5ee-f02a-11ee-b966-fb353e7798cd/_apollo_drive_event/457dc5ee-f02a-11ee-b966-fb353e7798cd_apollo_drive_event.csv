@@ -1,0 +1,8 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+457dc5ee-f02a-11ee-b966-fb353e7798cd,touched center rumbles - map issue?,1696963150818364161,,,,['NOT_DISENGAGEMENT']
+457dc5ee-f02a-11ee-b966-fb353e7798cd,approaching traffic,1696964041911651034,,,,['INTERSECTION']
+457dc5ee-f02a-11ee-b966-fb353e7798cd,,1696964049342667122,,,,['LOCALIZATION']
+457dc5ee-f02a-11ee-b966-fb353e7798cd,floating,1696964219243830723,,,,['LOCALIZATION']
+457dc5ee-f02a-11ee-b966-fb353e7798cd,followinf distance,1696964526769159326,,,,['TRAFFIC_FAULT']
+457dc5ee-f02a-11ee-b966-fb353e7798cd,close to hitting curb,1696964599897062676,,,,['NOT_DISENGAGEMENT']
+457dc5ee-f02a-11ee-b966-fb353e7798cd,,1696964605269905785,,,,['EOR']

@@ -1,0 +1,6 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+599673dc-f070-11ee-b9a9-fb353e7798cd,"crossed center line to avoid vehicle stopped on shoulder
+",1699383672968111664,,,,['TRAFFIC_FAULT']
+599673dc-f070-11ee-b9a9-fb353e7798cd,plan line split?,1699383992741294873,,,,
+599673dc-f070-11ee-b9a9-fb353e7798cd,one-lane road for utility work,1699384176798588177,,,,['OTHER']
+599673dc-f070-11ee-b9a9-fb353e7798cd,tractor as opposing traffic,1699385048380513773,,,,['OBJ_DETECTION']

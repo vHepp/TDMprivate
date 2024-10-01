@@ -1,0 +1,11 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+cf831f42-f353-11ee-bb4e-fb353e7798cd,"delay on initial engagement and cut out, 2nd engagement took with slight oscillation at first",1707412613360161785,,,,['OTHER']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,passing traffic,1707412934537552306,,,,['INTENTIONAL']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,failed re-engagement,1707412948469565379,,,,['OTHER']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,,1707413063118765831,,,,['UNKNOWN']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,on engagement took over c/l,1707413086675981388,,,,['LOCALIZATION']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,met large truck just over hillcrest - no impact or reaction noted,1707413301108219041,,,,['NOT_DISENGAGEMENT']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,override speed change to allow for traffic to pass,1707413424261229481,,,,['INTENTIONAL']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,both lateral and longitudinal oscillation (surging accelerator and drifting steering),1707414044879484883,,,,['OTHER']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,traffic in front producing stop gate with concern for response of surrounding traffic,1707414114205606943,,,,['OBJ_DETECTION']
+cf831f42-f353-11ee-bb4e-fb353e7798cd,oscillation steering,1707414311462535597,,,,['NOT_DISENGAGEMENT']

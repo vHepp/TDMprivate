@@ -1,0 +1,15 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,delayed engagement caused steering jerk,1704392398778952296,,,,['OTHER']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,,1704392469530632065,,,,['ROUND_ABOUT']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,slowed down for car turning left not on our road,1704392565843339056,,,,['OTHER']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,car outside of parking spot,1704392650266799170,,,,['TRAFFIC_FAULT']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,,1704392748618748001,,,,['ROUND_ABOUT']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,"blinks between green and red, van tries to go through red light",1704392821405024258,,,,['TRAFFIC_LIGHT']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,disengaged during turn,1704392867070748931,,,,['UNKNOWN']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,does not see vehicles stopped at red light,1704392908825089623,,,,['OBJ_DETECTION']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,lost brake and throttle at red light.,1704393237888734872,,,,
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,lost brake and throttle,1704393488957888107,,,,['OTHER']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,oncoming traffic,1704393547800100923,,,,['TRAFFIC_FAULT']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,lost brake and throttle at red light and rolled through red light,1704393640366182270,,,,
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,,1704393961300894197,,,,['RAILROAD']
+ba28b352-ec8f-11ee-b297-3b0ad9d5d6c6,,1704394007548817813,,,,['EOR']

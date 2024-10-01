@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+513a670c-eea9-11ee-9385-ef789ffde1d3,engagement correction,1697730450730839554,,,,['UNKNOWN']
+513a670c-eea9-11ee-9385-ef789ffde1d3,,1697730519984992574,,,,['ROUND_ABOUT']
+513a670c-eea9-11ee-9385-ef789ffde1d3,,1697730596776324249,,,,['TRAFFIC_LIGHT']
+513a670c-eea9-11ee-9385-ef789ffde1d3,,1697730628924345105,,,,['OBJ_DETECTION']
+513a670c-eea9-11ee-9385-ef789ffde1d3,deer x4,1697730720799194440,,,,['OBJ_DETECTION']
+513a670c-eea9-11ee-9385-ef789ffde1d3,jerk left,1697730898940439001,,,,"['OTHER', 'UNKNOWN']"

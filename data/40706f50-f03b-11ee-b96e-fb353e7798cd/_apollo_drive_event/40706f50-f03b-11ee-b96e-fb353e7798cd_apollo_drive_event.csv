@@ -1,0 +1,14 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+40706f50-f03b-11ee-b96e-fb353e7798cd,lost brake and accel unknown steering no audible alert,1694530595092253140,,,,['OTHER']
+40706f50-f03b-11ee-b96e-fb353e7798cd,"erroring out at stop sign, constant after releasing e-stop, with foot on brake AND in drive",1694530668500627882,,,,
+40706f50-f03b-11ee-b96e-fb353e7798cd,,1694530775426141008,,,,['LOCALIZATION']
+40706f50-f03b-11ee-b96e-fb353e7798cd,,1694530891910177268,,,,['OBJ_DETECTION']
+40706f50-f03b-11ee-b96e-fb353e7798cd,"over c/l
+",1694531014456947449,,,,['NOT_DISENGAGEMENT']
+40706f50-f03b-11ee-b96e-fb353e7798cd,great data for stop behavior allowing crosstraffic,1694531098975975804,,,,['NOT_DISENGAGEMENT']
+40706f50-f03b-11ee-b96e-fb353e7798cd,no stop gate,1694531241736506795,,,,['OBJ_DETECTION']
+40706f50-f03b-11ee-b96e-fb353e7798cd,,1694531281092348038,,,,['OBJ_DETECTION']
+40706f50-f03b-11ee-b96e-fb353e7798cd,over c/l,1694531407675598385,,,,['NOT_DISENGAGEMENT']
+40706f50-f03b-11ee-b96e-fb353e7798cd,shwoed in ctr of road,1694531423864696377,,,,['LOCALIZATION']
+40706f50-f03b-11ee-b96e-fb353e7798cd,,1694531430303295587,,,,['LOCALIZATION']
+40706f50-f03b-11ee-b96e-fb353e7798cd,,1694531503190288925,,,,['EOR']

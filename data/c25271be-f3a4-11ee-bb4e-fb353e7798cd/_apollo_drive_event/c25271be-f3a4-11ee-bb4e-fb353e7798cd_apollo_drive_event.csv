@@ -1,0 +1,9 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,cut out by itself,1708016894919400951,,,,['UNKNOWN']
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,cut out by itself,1708016942359598432,,,,['UNKNOWN']
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,left of center in turn,1708017392122639591,,,,['NOT_DISENGAGEMENT']
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,over center line in turn,1708017540454791373,,,,
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,over centerline in turn,1708017666509283910,,,,
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,kicked out by itself,1708017696819530590,,,,['UNKNOWN']
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,errored out,1708017787278509653,,,,
+c25271be-f3a4-11ee-bb4e-fb353e7798cd,"merging onto highway, wouldn't accelerate",1708018154045858960,,,,

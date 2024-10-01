@@ -1,0 +1,10 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+5774dcde-f196-11ee-babe-fb353e7798cd,rolled through stopbar,1708450386418426477,,,,['INTERSECTION']
+5774dcde-f196-11ee-babe-fb353e7798cd,system,1708450433816857705,,,,['OTHER']
+5774dcde-f196-11ee-babe-fb353e7798cd,,1708450507642152960,,,,['OTHER']
+5774dcde-f196-11ee-babe-fb353e7798cd,system,1708450858916147508,,,,['UNKNOWN']
+5774dcde-f196-11ee-babe-fb353e7798cd,failed re-engagement due to delay 3x,1708450887580221987,,,,['OTHER']
+5774dcde-f196-11ee-babe-fb353e7798cd,brakes pulsing,1708450926560786991,,,,['UNKNOWN']
+5774dcde-f196-11ee-babe-fb353e7798cd,system,1708450950154617157,,,,['OTHER']
+5774dcde-f196-11ee-babe-fb353e7798cd,,1708451076856607537,,,,['UNKNOWN']
+5774dcde-f196-11ee-babe-fb353e7798cd,,1708451081566081607,,,,['EOR']

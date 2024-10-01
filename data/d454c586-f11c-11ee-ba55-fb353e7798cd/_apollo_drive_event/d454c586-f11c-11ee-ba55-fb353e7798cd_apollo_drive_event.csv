@@ -1,0 +1,3 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+d454c586-f11c-11ee-ba55-fb353e7798cd,tight turn,1705941780784792377,,,,['INTERSECTION']
+d454c586-f11c-11ee-ba55-fb353e7798cd,,1705942457268125449,,,,['EOR']

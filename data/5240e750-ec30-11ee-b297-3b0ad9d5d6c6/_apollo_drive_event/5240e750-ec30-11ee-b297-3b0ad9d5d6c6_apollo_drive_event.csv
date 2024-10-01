@@ -1,0 +1,10 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,initial engagement failure 1x,1703614926094370082,,,,['OTHER']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,oscillation,1703614938716610885,,,,['NOT_DISENGAGEMENT']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,,1703614996457261138,,,,['ROUND_ABOUT']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,system disengaged at the beginning of turn as light turned red,1703615181315505894,,,,['OTHER']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,stopped for pedestrian in crosswalk,1703615237956550000,,,,['NOT_DISENGAGEMENT']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,rolling back into other traffic,1703615259174501857,,,,['INTERSECTION']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,already disenged - pedestrians entering parked car,1703615304495529263,,,,['NOT_DISENGAGEMENT']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,15mph roundabout speed sign,1703615337299678745,,,,['NOT_DISENGAGEMENT']
+5240e750-ec30-11ee-b297-3b0ad9d5d6c6,,1703615502187817833,,,,['RAILROAD']

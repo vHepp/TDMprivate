@@ -1,0 +1,6 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+7f824ea2-f05e-11ee-b993-fb353e7798cd,on the c/l no traffic,1694544808467337727,,,,"['NOT_DISENGAGEMENT', 'LOCALIZATION']"
+7f824ea2-f05e-11ee-b993-fb353e7798cd,severe,1694544824377877167,,,,['LOCALIZATION']
+7f824ea2-f05e-11ee-b993-fb353e7798cd,stop sign proceed,1694545146629887246,,,,"['NOT_DISENGAGEMENT', 'INTERSECTION']"
+7f824ea2-f05e-11ee-b993-fb353e7798cd,oncoming traffic along with oscilation,1694545190909005446,,,,"['LOCALIZATION', 'OBJ_DETECTION']"
+7f824ea2-f05e-11ee-b993-fb353e7798cd,,1694545494653839117,,,,"['EOR', 'INTENTIONAL']"

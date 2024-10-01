@@ -1,0 +1,5 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+dea29156-f123-11ee-ba5d-fb353e7798cd,got kicked out,1705943209755949694,,,,['OTHER']
+dea29156-f123-11ee-ba5d-fb353e7798cd,tight turn,1705943228329265444,,,,['OTHER']
+dea29156-f123-11ee-ba5d-fb353e7798cd,,1705943804485565718,,,,['LOCALIZATION']
+dea29156-f123-11ee-ba5d-fb353e7798cd,,1705943913076806096,,,,['EOR']

@@ -1,0 +1,9 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,shifted into park,1703707052422147279,,,,['UNKNOWN']
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,wide turn,1703707118161813239,,,,['LOCALIZATION']
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,float,1703707176910866205,,,,['LOCALIZATION']
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,system in curve,1703707203637292770,,,,['UNKNOWN']
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,float,1703707221232047296,,,,['LOCALIZATION']
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,,1703707259119968487,,,,['UNKNOWN']
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,float,1703707426907015700,,,,['NOT_DISENGAGEMENT']
+c9be2042-f0de-11ee-ba1e-fb353e7798cd,system after turn,1703707668974375233,,,,['UNKNOWN']

@@ -1,0 +1,7 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+d846a080-f115-11ee-ba51-fb353e7798cd,roll through stop sign and disenagged,1705940834529626702,,,,['UNKNOWN']
+d846a080-f115-11ee-ba51-fb353e7798cd,not sure,1705941326554837844,,,,['OTHER']
+d846a080-f115-11ee-ba51-fb353e7798cd,kicked out on turn,1705941401858589182,,,,['OTHER']
+d846a080-f115-11ee-ba51-fb353e7798cd,,1705941445979454371,,,,['LOCALIZATION']
+d846a080-f115-11ee-ba51-fb353e7798cd,,1705941485217816151,,,,['LOCALIZATION']
+d846a080-f115-11ee-ba51-fb353e7798cd,,1705941520122906628,,,,['EOR']

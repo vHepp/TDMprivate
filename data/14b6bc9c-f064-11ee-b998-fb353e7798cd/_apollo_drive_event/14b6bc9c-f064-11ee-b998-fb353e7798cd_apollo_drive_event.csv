@@ -1,0 +1,6 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+14b6bc9c-f064-11ee-b998-fb353e7798cd,squirel,1696513612529040531,,,,['OBJ_DETECTION']
+14b6bc9c-f064-11ee-b998-fb353e7798cd,,1696513720453471194,,,,['LOCALIZATION']
+14b6bc9c-f064-11ee-b998-fb353e7798cd,,1696513728198852197,,,,['LOCALIZATION']
+14b6bc9c-f064-11ee-b998-fb353e7798cd,,1696513785800711821,,,,['LOCALIZATION']
+14b6bc9c-f064-11ee-b998-fb353e7798cd,,1696514366194588636,,,,['EOR']

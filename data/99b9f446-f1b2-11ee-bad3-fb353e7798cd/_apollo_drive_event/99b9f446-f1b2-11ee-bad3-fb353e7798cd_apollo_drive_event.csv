@@ -1,0 +1,8 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+99b9f446-f1b2-11ee-bad3-fb353e7798cd,automatically disengaged,1708456821203075465,,,,['INTERSECTION']
+99b9f446-f1b2-11ee-bad3-fb353e7798cd,over the edge line,1708456885697044173,,,,
+99b9f446-f1b2-11ee-bad3-fb353e7798cd,over the edge line,1708456952607140254,,,,
+99b9f446-f1b2-11ee-bad3-fb353e7798cd,automatically disengaged,1708457033810768050,,,,
+99b9f446-f1b2-11ee-bad3-fb353e7798cd,traffic too close before system began moving,1708457203226003098,,,,"['INTERSECTION', 'INTENTIONAL']"
+99b9f446-f1b2-11ee-bad3-fb353e7798cd,deactivated by itself,1708457401041882208,,,,['UNKNOWN']
+99b9f446-f1b2-11ee-bad3-fb353e7798cd,,1708457535819183635,,,,['EOR']

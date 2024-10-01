@@ -1,0 +1,8 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+90101c36-a621-11ee-88ec-eb6a8d5269b4,manual takeover did not see car pulling out of parking spot ,1697647561000000000,211.1,39.3269275,-82.10141366666667,
+90101c36-a621-11ee-88ec-eb6a8d5269b4,manual takeover at roundabout went straight when it should have been turning,1697647895000000000,197.6,39.329374666666666,-82.1070785,
+90101c36-a621-11ee-88ec-eb6a8d5269b4,manual takeover got too close to cars as we turned at intersection,1697648189000000000,199.1,39.330317,-82.12783383333333,
+90101c36-a621-11ee-88ec-eb6a8d5269b4,manual takeover riding over edgeline,1697648807000000000,194,39.37980783333333,-82.1443905,
+90101c36-a621-11ee-88ec-eb6a8d5269b4,manual takeover to turn at blind corner,1697648841000000000,190.9,39.37736183333333,-82.14226833333333,
+90101c36-a621-11ee-88ec-eb6a8d5269b4,playback section in dreamview ,1697649019000000000,217.1,39.36707883333333,-82.131652,
+90101c36-a621-11ee-88ec-eb6a8d5269b4,manual takeover to go through roundabout,1697649491000000000,194,39.319299,-82.10578666666666,

@@ -1,0 +1,5 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+7d27535e-f0e6-11ee-ba21-fb353e7798cd,following a vehicle with various states of gates,1702314092494669739,,,,['NOT_DISENGAGEMENT']
+7d27535e-f0e6-11ee-ba21-fb353e7798cd,disabled vehicle and tow vehicle on right shoulder,1702314175921272390,,,,
+7d27535e-f0e6-11ee-ba21-fb353e7798cd,vehicle in front turned left,1702314315665362410,,,,
+7d27535e-f0e6-11ee-ba21-fb353e7798cd,construction barrels reducing hwy to right-lane only,1702314583920035131,,,,['NOT_DISENGAGEMENT']

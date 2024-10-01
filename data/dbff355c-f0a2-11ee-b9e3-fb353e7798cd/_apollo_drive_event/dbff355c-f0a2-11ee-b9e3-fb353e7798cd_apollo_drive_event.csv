@@ -1,0 +1,14 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,motorcycle passed us,1700163731573229964,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,flat bed tow truck on shoulder,1700164015346603839,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,route planned for short term,1700164030966332027,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,route planning,1700164110495246802,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,routing planned,1700164147867382328,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,routing planned,1700164178144660828,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,route planning,1700164217511550118,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,car in middle of road - also routing,1700164263794547575,,,,['LOCALIZATION']
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,route planned,1700164304336824902,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,route planned,1700164408255428882,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,"route was planned, appeared curved to the back",1700164426154995516,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,route planning,1700164706877913049,,,,
+dbff355c-f0a2-11ee-b9e3-fb353e7798cd,route planning,1700164894347581397,,,,

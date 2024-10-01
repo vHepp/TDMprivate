@@ -1,0 +1,10 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,,1692378230203870622,,,,['OBJ_DETECTION']
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,ovversized vehicle,1692378412494755213,,,,['OTHER']
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,,1692378750124360767,,,,
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,speed,1692378911187673244,,,,['OTHER']
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,,1692379013827860083,,,,['OBJ_DETECTION']
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,exit closed,1692379072533742855,,,,['OTHER']
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,,1692379529252123651,,,,['OTHER']
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,,1692379647479267877,,,,['UNKNOWN']
+e7b934a8-ef1a-11ee-9385-ef789ffde1d3,end of route,1692379703285847642,,,,['OTHER']

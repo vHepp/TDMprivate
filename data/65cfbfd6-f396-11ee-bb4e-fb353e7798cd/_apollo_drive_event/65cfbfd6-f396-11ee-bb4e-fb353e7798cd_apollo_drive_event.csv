@@ -1,0 +1,9 @@
+groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,twitch,1708012080949789139,,,,['UNKNOWN']
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,wide turn proximity to guard rail,1708012276520220137,,,,['OTHER']
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,failed re-engagement 3-beeps,1708012290474403597,,,,['OTHER']
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,poor timing with cross-traffic out of range,1708013242007998226,,,,['INTERSECTION']
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,steering shook - wind? (unknown cause of a notable reaction),1708013302909828132,,,,['UNKNOWN']
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,,1708013457012504734,,,,['UNKNOWN']
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,re-engagement failed with steering jerk correction after delay to respond to input and veer off-course over ~3sec,1708013508382613797,,,,['OTHER']
+65cfbfd6-f396-11ee-bb4e-fb353e7798cd,steering twitch (right after bridge - gps shadow?),1708013614210052653,,,,['NOT_DISENGAGEMENT']
