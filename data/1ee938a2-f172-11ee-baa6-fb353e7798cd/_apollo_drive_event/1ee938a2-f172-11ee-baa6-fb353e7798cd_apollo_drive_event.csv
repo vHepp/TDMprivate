@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-1ee938a2-f172-11ee-baa6-fb353e7798cd,repeat location,1705608628663932464,,,,['UNKNOWN']
-1ee938a2-f172-11ee-baa6-fb353e7798cd,"Not disengagement - searching for road, <=0.5 2d SD, green localization/gps, flickering led on dash",1705609232234896935,,,,['LOCALIZATION']
-1ee938a2-f172-11ee-baa6-fb353e7798cd,,1705609436723100567,,,,['INTERSECTION']
-1ee938a2-f172-11ee-baa6-fb353e7798cd,not disengagement - combination of following car and large vehicle passing (tanker truck),1705609526936732704,,,,['OBJ_DETECTION']
-1ee938a2-f172-11ee-baa6-fb353e7798cd,"car approaching from behind as van was accelerating and decelerating due to following vehicle, anticipated paths cross ahead of us between it and another vehicle passing van",1705609650666776140,,,,['OBJ_DETECTION']

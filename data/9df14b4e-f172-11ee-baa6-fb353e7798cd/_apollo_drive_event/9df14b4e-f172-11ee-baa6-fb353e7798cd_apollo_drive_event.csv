@@ -1,7 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-9df14b4e-f172-11ee-baa6-fb353e7798cd,stop sign,1706637988395207380,,,,['INTERSECTION']
-9df14b4e-f172-11ee-baa6-fb353e7798cd,,1706638122895940491,,,,['UNKNOWN']
-9df14b4e-f172-11ee-baa6-fb353e7798cd,,1706638283552545499,,,,['UNKNOWN']
-9df14b4e-f172-11ee-baa6-fb353e7798cd,,1706638329697004042,,,,['TRAFFIC_FAULT']
-9df14b4e-f172-11ee-baa6-fb353e7798cd,,1706638547061625683,,,,['UNKNOWN']
-9df14b4e-f172-11ee-baa6-fb353e7798cd,,1706638712154572467,,,,['EOR']

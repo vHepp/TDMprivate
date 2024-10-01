@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-7e3d64da-f12d-11ee-ba68-fb353e7798cd,tight turn,1705944629750939213,,,,['OTHER']
-7e3d64da-f12d-11ee-ba68-fb353e7798cd,,1705944792757204132,,,,['UNKNOWN']
-7e3d64da-f12d-11ee-ba68-fb353e7798cd,,1705944969018412239,,,,['INTENTIONAL']
-7e3d64da-f12d-11ee-ba68-fb353e7798cd,,1705945222827223178,,,,['UNKNOWN']
-7e3d64da-f12d-11ee-ba68-fb353e7798cd,,1705945329694045895,,,,['EOR']

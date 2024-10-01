@@ -1,5 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-236836f6-f1dd-11ee-bae8-fb353e7798cd,,1708634528193453309,,,,['UNKNOWN']
-236836f6-f1dd-11ee-bae8-fb353e7798cd,steering twitch,1708634808689877709,,,,['NOT_DISENGAGEMENT']
-236836f6-f1dd-11ee-bae8-fb353e7798cd,intentionally avoiding truck parked alongside road,1708634992447234627,,,,['OBJ_DETECTION']
-236836f6-f1dd-11ee-bae8-fb353e7798cd,,1708635108509513373,,,,['EOR']

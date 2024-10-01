@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,,1706813004040731078,,,,['UNKNOWN']
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,over centerline,1706813299829937350,,,,
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,letting traffic pass,1706813818351316443,,,,['INTENTIONAL']
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,"hanging in centerline, oncoming traffic",1706813875912150827,,,,"['INTENTIONAL', 'LOCALIZATION']"
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,,1706814046103560437,,,,"['INTENTIONAL', 'INTERSECTION']"
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,merging onto highway,1706814414901832438,,,,['INTENTIONAL']
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,traffic merging onto highway,1706814443542504324,,,,"['TRAFFIC_FAULT', 'INTENTIONAL']"
-88dd6fbe-f224-11ee-bb21-fb353e7798cd,,1706814616060011349,,,,['EOR']

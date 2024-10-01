@@ -1,7 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-8437f77a-cab7-11ee-909c-e1dc60cf66f9,manual takeover at stop light lost detection,1696871928000000000,206.8,39.3622025,-82.10571016666667,
-8437f77a-cab7-11ee-909c-e1dc60cf66f9,manual takeover riding towards edgeline,1696872594000000000,204.7,39.38887483333333,-82.006105,
-8437f77a-cab7-11ee-909c-e1dc60cf66f9,"manual takeover riding on edgeline, low accuracy ",1696873029000000000,232.7,39.349169,-81.98003233333333,
-8437f77a-cab7-11ee-909c-e1dc60cf66f9,manual takeover to get onto highway with room for safety driver,1696873245000000000,194.3,39.324343166666665,-81.9951575,
-8437f77a-cab7-11ee-909c-e1dc60cf66f9,manual takeover for slowing down on the highway as a truck passed,1696873445000000000,200.7,39.334443666666665,-82.03449783333333,
-8437f77a-cab7-11ee-909c-e1dc60cf66f9,manual takeover slowed down on highway,1696873558000000000,195.9,39.33235583333333,-82.063437,

@@ -1,5 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-a901fe40-f0fd-11ee-ba39-fb353e7798cd,automatically went into park,1704822904562017865,,,,['UNKNOWN']
-a901fe40-f0fd-11ee-ba39-fb353e7798cd,cut out on corner. Driver took over.,1704822988718984083,,,,['LOCALIZATION']
-a901fe40-f0fd-11ee-ba39-fb353e7798cd,"over left of centerline, oncoming traffic.",1704823189626942962,,,,['INTENTIONAL']
-a901fe40-f0fd-11ee-ba39-fb353e7798cd,truck on roadside,1704823228490734077,,,,['OTHER']

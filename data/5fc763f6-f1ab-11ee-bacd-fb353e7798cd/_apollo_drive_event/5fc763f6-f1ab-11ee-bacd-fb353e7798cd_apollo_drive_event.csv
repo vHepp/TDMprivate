@@ -1,5 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-5fc763f6-f1ab-11ee-bacd-fb353e7798cd,automatic disengagement,1708455486538162035,,,,['INTERSECTION']
-5fc763f6-f1ab-11ee-bacd-fb353e7798cd,over the edge line,1708455547421291415,,,,['INTENTIONAL']
-5fc763f6-f1ab-11ee-bacd-fb353e7798cd,on the edge line,1708455609689657382,,,,
-5fc763f6-f1ab-11ee-bacd-fb353e7798cd,,1708456175134695050,,,,['EOR']

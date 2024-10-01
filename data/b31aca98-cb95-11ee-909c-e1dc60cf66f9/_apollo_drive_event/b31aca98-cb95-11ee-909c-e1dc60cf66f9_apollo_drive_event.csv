@@ -1,3 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-b31aca98-cb95-11ee-909c-e1dc60cf66f9,manual takeover did not detect truck when getting onto highway and tried to go,1697139244000000000,242.9,39.289016,-82.46742716666667,
-b31aca98-cb95-11ee-909c-e1dc60cf66f9,manual takeover to end route,1697139607000000000,274.6,39.32725716666667,-82.44111116666667,

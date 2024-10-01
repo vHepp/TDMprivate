@@ -1,8 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-53fad09e-f0f7-11ee-ba2f-fb353e7798cd,system at stop sign,1704821148416244168,,,,['OTHER']
-53fad09e-f0f7-11ee-ba2f-fb353e7798cd,white line,1704821211921384237,,,,['LOCALIZATION']
-53fad09e-f0f7-11ee-ba2f-fb353e7798cd,0.5 2d-SD at last disengement,1704821253024400725,,,,['LOCALIZATION']
-53fad09e-f0f7-11ee-ba2f-fb353e7798cd,riding white line at >0.2 2d-SD consisently,1704821284743756506,,,,['LOCALIZATION']
-53fad09e-f0f7-11ee-ba2f-fb353e7798cd,recognized cross traffic but disengaged on turn,1704821537710055991,,,,['OTHER']
-53fad09e-f0f7-11ee-ba2f-fb353e7798cd,system in turns,1704821756084007993,,,,['LOCALIZATION']
-53fad09e-f0f7-11ee-ba2f-fb353e7798cd,,1704821893229140143,,,,['EOR']

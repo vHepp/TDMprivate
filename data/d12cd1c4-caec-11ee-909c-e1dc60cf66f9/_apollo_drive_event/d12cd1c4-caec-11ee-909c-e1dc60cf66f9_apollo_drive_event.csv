@@ -1,5 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-d12cd1c4-caec-11ee-909c-e1dc60cf66f9,manual takeover lost stoplight,1697650594000000000,207.5,39.36212333333334,-82.10561083333333,
-d12cd1c4-caec-11ee-909c-e1dc60cf66f9,manual takeover cop got between us and safety driver,1697651389000000000,197.5,39.379885333333334,-81.99206733333334,
-d12cd1c4-caec-11ee-909c-e1dc60cf66f9,manual takeover to slow down for car the pulled onto road in front of us,1697652097000000000,196.3,39.331653,-82.05187416666666,
-d12cd1c4-caec-11ee-909c-e1dc60cf66f9,manual takeover to end route,1697652231000000000,199.6,39.332462,-82.08194666666667,

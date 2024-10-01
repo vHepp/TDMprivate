@@ -1,7 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-ece2a8be-f047-11ee-b97d-fb353e7798cd,cross c/l while localized,1694534172802867174,,,,['NOT_DISENGAGEMENT']
-ece2a8be-f047-11ee-b97d-fb353e7798cd,,1694534190777065680,,,,['LOCALIZATION']
-ece2a8be-f047-11ee-b97d-fb353e7798cd,no brake or accel kept steering,1694534428784405473,,,,['OTHER']
-ece2a8be-f047-11ee-b97d-fb353e7798cd,started sprinkling,1694534452167197434,,,,['NOT_DISENGAGEMENT']
-ece2a8be-f047-11ee-b97d-fb353e7798cd,oscillation,1694534804354931783,,,,['LOCALIZATION']
-ece2a8be-f047-11ee-b97d-fb353e7798cd,,1694534859614835278,,,,['EOR']

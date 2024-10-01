@@ -1,7 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-96ceec56-f1cf-11ee-bae4-fb353e7798cd,"made extremely wide right turn into other lane, then correction was severe",1708632147314240856,,,,['OTHER']
-96ceec56-f1cf-11ee-bae4-fb353e7798cd,system,1708632171769953771,,,,['OTHER']
-96ceec56-f1cf-11ee-bae4-fb353e7798cd,driver disengagement for oncoming traffic,1708632331247389208,,,,['INTENTIONAL']
-96ceec56-f1cf-11ee-bae4-fb353e7798cd,"stop sign turn executed successfully, noted in consideration of no impact from cross-traffic in opposing lane",1708632507266579517,,,,['NOT_DISENGAGEMENT']
-96ceec56-f1cf-11ee-bae4-fb353e7798cd,imminent collision warning for truck parked alongside road,1708632703734880419,,,,['OBJ_DETECTION']
-96ceec56-f1cf-11ee-bae4-fb353e7798cd,,1708632812106760272,,,,['EOR']

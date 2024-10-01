@@ -1,5 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-c4146d46-f074-11ee-b9ac-fb353e7798cd,,1696527505101572999,,,,['LOCALIZATION']
-c4146d46-f074-11ee-b9ac-fb353e7798cd,,1696527556210997883,,,,['LOCALIZATION']
-c4146d46-f074-11ee-b9ac-fb353e7798cd,,1696527845760267171,,,,['OBJ_DETECTION']
-c4146d46-f074-11ee-b9ac-fb353e7798cd,oscilation,1696527920316747799,,,,['NOT_DISENGAGEMENT']

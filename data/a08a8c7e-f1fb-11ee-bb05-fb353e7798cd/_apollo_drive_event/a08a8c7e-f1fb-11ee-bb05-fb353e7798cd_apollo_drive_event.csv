@@ -1,4 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-a08a8c7e-f1fb-11ee-bb05-fb353e7798cd,turtle on road,1691682307173287222,,,,['TRAFFIC_FAULT']
-a08a8c7e-f1fb-11ee-bb05-fb353e7798cd,,1691682602632748516,,,,['TRAFFIC_FAULT']
-a08a8c7e-f1fb-11ee-bb05-fb353e7798cd,EOR,1691682720503578072,,,,['OTHER']

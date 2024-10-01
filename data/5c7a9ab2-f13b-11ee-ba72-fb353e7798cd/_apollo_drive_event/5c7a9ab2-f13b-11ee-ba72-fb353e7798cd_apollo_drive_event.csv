@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-5c7a9ab2-f13b-11ee-ba72-fb353e7798cd,system at stop sign,1706214931330661659,,,,['OTHER']
-5c7a9ab2-f13b-11ee-ba72-fb353e7798cd,,1706215251461975991,,,,['OBJ_DETECTION']
-5c7a9ab2-f13b-11ee-ba72-fb353e7798cd,traffic,1706215308468694074,,,,['INTERSECTION']
-5c7a9ab2-f13b-11ee-ba72-fb353e7798cd,,1706215420610946729,,,,['UNKNOWN']
-5c7a9ab2-f13b-11ee-ba72-fb353e7798cd,,1706215616414830361,,,,['LOCALIZATION']

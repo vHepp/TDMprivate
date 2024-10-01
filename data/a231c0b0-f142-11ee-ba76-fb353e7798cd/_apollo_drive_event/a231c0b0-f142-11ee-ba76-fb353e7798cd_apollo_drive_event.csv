@@ -1,7 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-a231c0b0-f142-11ee-ba76-fb353e7798cd,at point where stop bar progressed,1706628911526998929,,,,['INTERSECTION']
-a231c0b0-f142-11ee-ba76-fb353e7798cd,centerline,1706628944545634054,,,,['LOCALIZATION']
-a231c0b0-f142-11ee-ba76-fb353e7798cd,two large trucks in oncoming traffic,1706628963190627598,,,,['OBJ_DETECTION']
-a231c0b0-f142-11ee-ba76-fb353e7798cd,hwy traffic approaching intersection,1706629244995936231,,,,['INTENTIONAL']
-a231c0b0-f142-11ee-ba76-fb353e7798cd,float,1706629270602267332,,,,['NOT_DISENGAGEMENT']
-a231c0b0-f142-11ee-ba76-fb353e7798cd,accelerator pulsing 20-30,1706629430863385383,,,,['NOT_DISENGAGEMENT']
