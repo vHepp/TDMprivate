@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-feaf2ba8-d28d-11ee-b437-336917683bb8,manual takeover turning at light got too close to car,1698252014000000000,204.3,39.33031583333333,-82.1278335,
-feaf2ba8-d28d-11ee-b437-336917683bb8,came to a stop in road as cars pulled out into other lane,1698252112000000000,200,39.33645583333333,-82.13542533333333,
-feaf2ba8-d28d-11ee-b437-336917683bb8,manual takeover to take turn at blind corner ,1698252668000000000,194.8,39.37751516666667,-82.14234883333333,
-feaf2ba8-d28d-11ee-b437-336917683bb8,manual takeover at roundabout tried to go with car coming ,1698253387000000000,197.5,39.31927833333334,-82.10580133333333,
-feaf2ba8-d28d-11ee-b437-336917683bb8,manual takeover someone between van and safety driver,1698253575000000000,226.4,39.328834666666665,-82.10130766666667,

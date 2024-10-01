@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-d24820c8-f197-11ee-babe-fb353e7798cd,"cut off
-",1706039711836609511,,,,['TRAFFIC_FAULT']
-d24820c8-f197-11ee-babe-fb353e7798cd,disengage mid turn,1706040001660848079,,,,['UNKNOWN']
-d24820c8-f197-11ee-babe-fb353e7798cd,disengage in turn 2d-sd at .05,1706040783615786448,,,,['UNKNOWN']
-d24820c8-f197-11ee-babe-fb353e7798cd,bicycle on route,1706040841349842122,,,,['OBJ_DETECTION']
-d24820c8-f197-11ee-babe-fb353e7798cd,exit ramp,1706041177485045214,,,,['INTENTIONAL']
-d24820c8-f197-11ee-babe-fb353e7798cd,disengage on straight,1706041349735436132,,,,['UNKNOWN']
-d24820c8-f197-11ee-babe-fb353e7798cd,,1706041384410603269,,,,['EOR']

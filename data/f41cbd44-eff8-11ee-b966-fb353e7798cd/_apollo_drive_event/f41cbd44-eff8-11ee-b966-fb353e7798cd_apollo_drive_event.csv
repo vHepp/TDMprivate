@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-f41cbd44-eff8-11ee-b966-fb353e7798cd,crossed center line and rumbles,1696349346812078279,,,,['LOCALIZATION']
-f41cbd44-eff8-11ee-b966-fb353e7798cd,oscillation,1696349433178308161,,,,['LOCALIZATION']
-f41cbd44-eff8-11ee-b966-fb353e7798cd,touched center line rumbles at 0.5 m 2d-SD,1696349466766247876,,,,['NOT_DISENGAGEMENT']
-f41cbd44-eff8-11ee-b966-fb353e7798cd,center line rumbles at 1 m,1696349497324815967,,,,['LOCALIZATION']
-f41cbd44-eff8-11ee-b966-fb353e7798cd,oscilation 0.5m,1696349644083602210,,,,
-f41cbd44-eff8-11ee-b966-fb353e7798cd,large truck oncoming traffic,1696349667341278792,,,,['OBJ_DETECTION']
-f41cbd44-eff8-11ee-b966-fb353e7798cd,just touched center line rumbles on right curve,1696349740152905263,,,,['LOCALIZATION']
-f41cbd44-eff8-11ee-b966-fb353e7798cd,turning traffic,1696349925682549503,,,,['INTERSECTION']

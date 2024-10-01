@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-870cfd32-f1b9-11ee-bad5-fb353e7798cd,traffic behind vehicle,1708458182796490029,,,,"['INTENTIONAL', 'INTERSECTION', 'TRAFFIC_FAULT']"
-870cfd32-f1b9-11ee-bad5-fb353e7798cd,close to line w/ oncoming traffic,1708458263455367390,,,,"['INTERSECTION', 'TRAFFIC_FAULT']"
-870cfd32-f1b9-11ee-bad5-fb353e7798cd,automatically deactivated,1708458421393524306,,,,['UNKNOWN']
-870cfd32-f1b9-11ee-bad5-fb353e7798cd,automatically deactivated,1708458770248916307,,,,['UNKNOWN']
-870cfd32-f1b9-11ee-bad5-fb353e7798cd,,1708458898331158708,,,,['EOR']

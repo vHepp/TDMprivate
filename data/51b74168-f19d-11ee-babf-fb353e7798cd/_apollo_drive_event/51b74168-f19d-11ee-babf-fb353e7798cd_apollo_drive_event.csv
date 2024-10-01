@@ -1,5 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-51b74168-f19d-11ee-babf-fb353e7798cd,went into park,1708452550770282405,,,,['OTHER']
-51b74168-f19d-11ee-babf-fb353e7798cd,,1708452903321718076,,,,['BY_MISTAKE']
-51b74168-f19d-11ee-babf-fb353e7798cd,err on disengagement,1708452927147998360,,,,
-51b74168-f19d-11ee-babf-fb353e7798cd,,1708453258248311374,,,,['EOR']

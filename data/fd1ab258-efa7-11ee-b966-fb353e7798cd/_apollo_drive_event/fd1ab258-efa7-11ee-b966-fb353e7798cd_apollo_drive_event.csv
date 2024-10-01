@@ -1,7 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-fd1ab258-efa7-11ee-b966-fb353e7798cd,,1693333243016963015,,,,['LOCALIZATION']
-fd1ab258-efa7-11ee-b966-fb353e7798cd,overtaken by another vehicle,1693333709221302040,,,,['TRAFFIC_FAULT']
-fd1ab258-efa7-11ee-b966-fb353e7798cd,stop sign,1693334066608908653,,,,['OTHER']
-fd1ab258-efa7-11ee-b966-fb353e7798cd,construction detour,1693334313177547514,,,,
-fd1ab258-efa7-11ee-b966-fb353e7798cd,,1693334487838661876,,,,['OBJ_DETECTION']
-fd1ab258-efa7-11ee-b966-fb353e7798cd,end of route,1693334668133090952,,,,['OTHER']

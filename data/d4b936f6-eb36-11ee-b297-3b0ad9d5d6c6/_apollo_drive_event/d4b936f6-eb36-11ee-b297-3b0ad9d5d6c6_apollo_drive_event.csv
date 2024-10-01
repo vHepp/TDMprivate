@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-d4b936f6-eb36-11ee-b297-3b0ad9d5d6c6,"No route planned for most of hwy 682, came back with blue planning just before roundabout, ref screenshots",1700496432875638275,,,,
-d4b936f6-eb36-11ee-b297-3b0ad9d5d6c6,"planning stopped for stop light, came back when it lost the light, and then stopped again while waiting for green light",1700496508008857747,,,,['NOT_DISENGAGEMENT']
-d4b936f6-eb36-11ee-b297-3b0ad9d5d6c6,No planning - missing blue line,1700496980963512922,,,,
-d4b936f6-eb36-11ee-b297-3b0ad9d5d6c6,"planning came back, blue line exists",1700497104372084830,,,,['NOT_DISENGAGEMENT']
-d4b936f6-eb36-11ee-b297-3b0ad9d5d6c6,lost blue planning line at 40mph,1700497307896416910,,,,['NOT_DISENGAGEMENT']

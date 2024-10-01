@@ -1,4 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-d7cb9c92-f164-11ee-ba97-fb353e7798cd,put van in park,1706635388617959041,,,,['UNKNOWN']
-d7cb9c92-f164-11ee-ba97-fb353e7798cd,,1706635464026444324,,,,['UNKNOWN']
-d7cb9c92-f164-11ee-ba97-fb353e7798cd,,1706635722156494850,,,,['OBJ_DETECTION']

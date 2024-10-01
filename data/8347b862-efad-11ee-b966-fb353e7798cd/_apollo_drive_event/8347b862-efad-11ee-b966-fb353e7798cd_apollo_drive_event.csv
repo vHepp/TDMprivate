@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-8347b862-efad-11ee-b966-fb353e7798cd,lost brake & throttle not steering,1693335812020610795,,,,['OTHER']
-8347b862-efad-11ee-b966-fb353e7798cd,,1693336159856273093,,,,['OBJ_DETECTION']
-8347b862-efad-11ee-b966-fb353e7798cd,testiong,1693336178264693628,,,,['OTHER']
-8347b862-efad-11ee-b966-fb353e7798cd,,1693336255659279050,,,,['LOCALIZATION']
-8347b862-efad-11ee-b966-fb353e7798cd,,1693336307620406733,,,,['LOCALIZATION']
-8347b862-efad-11ee-b966-fb353e7798cd,lost brake and throttle not steering,1693336590598738519,,,,['OTHER']
-8347b862-efad-11ee-b966-fb353e7798cd,,1693336866105290770,,,,['TRAFFIC_FAULT']
-8347b862-efad-11ee-b966-fb353e7798cd,,1693336893492812270,,,,['OBJ_DETECTION']

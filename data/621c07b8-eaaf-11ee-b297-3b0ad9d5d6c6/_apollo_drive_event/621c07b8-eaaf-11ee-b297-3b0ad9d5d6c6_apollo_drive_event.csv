@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,,1698161275691938879,,,,['ROUND_ABOUT']
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,parallel parked cars over line,1698161490179137986,,,,"['OBJ_DETECTION', 'INTENTIONAL']"
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,car cut off in turn,1698161562520662335,,,,['OBJ_DETECTION']
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,,1698161660053808617,,,,['ROUND_ABOUT']
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,,1698161840829393087,,,,['RAILROAD']
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,utility work on-road,1698162554839761012,,,,['OBJ_DETECTION']
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,mail truck,1698162715754529694,,,,['OBJ_DETECTION']
-621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6,,1698162858941586528,,,,['EOR']

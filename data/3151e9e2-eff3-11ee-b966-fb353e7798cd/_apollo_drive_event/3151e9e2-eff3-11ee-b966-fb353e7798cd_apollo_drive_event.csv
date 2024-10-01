@@ -1,5 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-3151e9e2-eff3-11ee-b966-fb353e7798cd,safety for peds present,1696345068693950720,,,,['INTENTIONAL']
-3151e9e2-eff3-11ee-b966-fb353e7798cd,"lat hiccup swerve away from oncoming traffic as it passed (large vehicle, box truck)",1696345223474484968,,,,['NOT_DISENGAGEMENT']
-3151e9e2-eff3-11ee-b966-fb353e7798cd,briefly hit rumbles on center line,1696345478424703441,,,,['NOT_DISENGAGEMENT']
-3151e9e2-eff3-11ee-b966-fb353e7798cd,map error 25mph max is too brief,1696345680255204829,,,,['OTHER']

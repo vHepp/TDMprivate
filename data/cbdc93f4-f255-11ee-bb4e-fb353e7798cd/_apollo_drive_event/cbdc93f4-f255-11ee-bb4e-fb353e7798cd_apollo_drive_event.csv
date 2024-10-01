@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-cbdc93f4-f255-11ee-bb4e-fb353e7798cd,fault and system failure,1701203255258319943,,,,['OTHER']
-cbdc93f4-f255-11ee-bb4e-fb353e7798cd,fault and system failure,1701203605913573257,,,,
-cbdc93f4-f255-11ee-bb4e-fb353e7798cd,system failure when engaging uncentered,1701203665777520965,,,,['OTHER']
-cbdc93f4-f255-11ee-bb4e-fb353e7798cd,question if system or by mistake,1701203875065292959,,,,['UNKNOWN']
-cbdc93f4-f255-11ee-bb4e-fb353e7798cd,system failure,1701203903896061568,,,,['UNKNOWN']

@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-25135418-f250-11ee-bb4a-fb353e7798cd,system failure,1701199860360159555,,,,['OTHER']
-25135418-f250-11ee-bb4a-fb353e7798cd,system failure mid-turn (2nd time today this location),1701199951174811392,,,,['OTHER']
-25135418-f250-11ee-bb4a-fb353e7798cd,fault and system failure,1701200199724604677,,,,['OTHER']
-25135418-f250-11ee-bb4a-fb353e7798cd,gravitate towards oncoming traffic at intersection,1701200466306806620,,,,['UNKNOWN']
-25135418-f250-11ee-bb4a-fb353e7798cd,,1701200584725352093,,,,['EOR']

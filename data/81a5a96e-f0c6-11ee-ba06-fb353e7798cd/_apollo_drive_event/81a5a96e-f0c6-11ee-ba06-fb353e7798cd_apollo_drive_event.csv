@@ -1,6 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-81a5a96e-f0c6-11ee-ba06-fb353e7798cd,values significantly higher than 11-28 ,1701360544918180667,,,,['LOCALIZATION']
-81a5a96e-f0c6-11ee-ba06-fb353e7798cd,2d-SD values finally dropped back under 0.2,1701360617531297553,,,,
-81a5a96e-f0c6-11ee-ba06-fb353e7798cd,blue led,1701360776851244546,,,,['LOCALIZATION']
-81a5a96e-f0c6-11ee-ba06-fb353e7798cd,green at stop,1701360795698664688,,,,['LOCALIZATION']
-81a5a96e-f0c6-11ee-ba06-fb353e7798cd,2d sd reached 1 but no localization warni9ng,1701361071749836198,,,,['LOCALIZATION']

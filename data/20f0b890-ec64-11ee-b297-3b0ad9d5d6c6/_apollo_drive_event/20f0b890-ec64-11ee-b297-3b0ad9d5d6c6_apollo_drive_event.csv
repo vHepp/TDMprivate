@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,,1703696647968427114,,,,['ROUND_ABOUT']
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,traffic,1703696984593930565,,,,['OBJ_DETECTION']
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,Traffic,1703697176089966222,,,,['INTERSECTION']
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,opposing traffic close to center line,1703697363073528234,,,,['OTHER']
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,traffic,1703697567617787215,,,,['INTERSECTION']
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,steep hill,1703697812334479145,,,,['INTERSECTION']
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,turning car,1703698022132645343,,,,['INTENTIONAL']
-20f0b890-ec64-11ee-b297-3b0ad9d5d6c6,,1703698226512838924,,,,['RAILROAD']

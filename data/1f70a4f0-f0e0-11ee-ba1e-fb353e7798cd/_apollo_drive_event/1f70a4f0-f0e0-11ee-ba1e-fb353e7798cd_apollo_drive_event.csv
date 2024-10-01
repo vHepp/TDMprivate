@@ -1,4 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-1f70a4f0-f0e0-11ee-ba1e-fb353e7798cd,correction at engagement but did NOT disengage,1701972489369778211,,,,['NOT_DISENGAGEMENT']
-1f70a4f0-f0e0-11ee-ba1e-fb353e7798cd,c/l rumble,1701972808890163395,,,,['NOT_DISENGAGEMENT']
-1f70a4f0-f0e0-11ee-ba1e-fb353e7798cd,passing traffic flipped us off,1701972841246892226,,,,['NOT_DISENGAGEMENT']

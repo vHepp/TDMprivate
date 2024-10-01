@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-9736e77c-f187-11ee-bab6-fb353e7798cd,rolled past stop bar,1708446165389590240,,,,['OTHER']
-9736e77c-f187-11ee-bab6-fb353e7798cd,,1708446230444566418,,,,['UNKNOWN']
-9736e77c-f187-11ee-bab6-fb353e7798cd,jerk due to delaydelay on re-engagement,1708446266981195738,,,,['OTHER']
-9736e77c-f187-11ee-bab6-fb353e7798cd,,1708446307400515734,,,,['UNKNOWN']
-9736e77c-f187-11ee-bab6-fb353e7798cd,,1708446376055275132,,,,['UNKNOWN']
-9736e77c-f187-11ee-bab6-fb353e7798cd,traffic presence vs system timing - cross-traffic too far out of range to recognize by sensors,1708446602140749651,,,,['INTERSECTION']
-9736e77c-f187-11ee-bab6-fb353e7798cd,float,1708446678279859642,,,,['OTHER']
-9736e77c-f187-11ee-bab6-fb353e7798cd,,1708446733164388012,,,,['UNKNOWN']

@@ -1,7 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-fa9cba86-f0f0-11ee-ba2a-fb353e7798cd,system as soon as stop bar moved beyond stop sign,1704819754219734968,,,,['INTERSECTION']
-fa9cba86-f0f0-11ee-ba2a-fb353e7798cd,close to edge,1704819814089406680,,,,['LOCALIZATION']
-fa9cba86-f0f0-11ee-ba2a-fb353e7798cd,approaching traffic on hwy,1704820097869896058,,,,['TRAFFIC_FAULT']
-fa9cba86-f0f0-11ee-ba2a-fb353e7798cd,float,1704820140388794711,,,,['LOCALIZATION']
-fa9cba86-f0f0-11ee-ba2a-fb353e7798cd,system through turns,1704820350949099114,,,,['OTHER']
-fa9cba86-f0f0-11ee-ba2a-fb353e7798cd,,1704820468257986680,,,,['EOR']

@@ -1,9 +1,0 @@
-groupMetadataID,event,time,position.alt_msl,position.latitude,position.longitude,type
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,traffic,1703619910595492696,,,,['OBJ_DETECTION']
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,,1703620154669543909,,,,['UNKNOWN']
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,car turning right,1703620376811465474,,,,['OBJ_DETECTION']
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,,1703620485126346214,,,,['RAILROAD']
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,,1703620616577315573,,,,['UNKNOWN']
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,car turning right,1703620817876405509,,,,['OBJ_DETECTION']
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,oncoming traffic,1703621044899075963,,,,['OBJ_DETECTION']
-cb205756-ec43-11ee-b297-3b0ad9d5d6c6,,1703621528293335315,,,,['RAILROAD']
