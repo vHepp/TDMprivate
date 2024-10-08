@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[7]:
 
 
 import numpy as np
 
 import pandas as pd
 
+import os
 
-# In[1]:
+
+# In[8]:
 
 
 def BinaryDrivingMode( chassis_df ):
@@ -35,7 +37,7 @@ def BinaryDrivingMode( chassis_df ):
     chassis_df[ 'BinaryDrivingMode' ] = binary_drive_mode_lst
 
 
-# In[2]:
+# In[9]:
 
 
 def TernaryDrivingModeTransition( time_sorted_chassis_df ):
@@ -55,7 +57,7 @@ def TernaryDrivingModeTransition( time_sorted_chassis_df ):
     time_sorted_chassis_df[ 'TernaryDrivingModeTransition' ] = ternary_drive_mode_trans_lst
 
 
-# In[3]:
+# In[10]:
 
 
 def LatLonTotalStdDev( best_pose_df ):
@@ -77,7 +79,7 @@ def LatLonTotalStdDev( best_pose_df ):
     best_pose_df[ 'LatLonTotalStdDev' ] = latlon_total_stddev_lst
 
 
-# In[14]:
+# In[11]:
 
 
 def ChassisBestPoseMatchedTime( same_gmID_chassis_df, same_gmID_best_pose_df ):
@@ -105,7 +107,47 @@ def ChassisBestPoseMatchedTime( same_gmID_chassis_df, same_gmID_best_pose_df ):
     same_gmID_best_pose_df[ 'ChassisBestPoseMatchedTime' ] = same_gmID_best_pose_df[ 'time' ]
 
 
-# In[1]:
+# In[12]:
+
+
+def ProgressAlongRoute( best_pose_df, time_sorted_reference_best_pose_df):
+
+    reference_ProgressAlongRoute_list = [ 0 ]
+
+    reference_latitude_array = np.array( time_sorted_reference_best_pose_df[ 'latitude' ] )
+
+    reference_longitude_array = np.array( time_sorted_reference_best_pose_df[ 'longitude' ] )
+
+    for index in range( len( reference_latitude_array[ : -1 ] ) ):
+
+        reference_ProgressAlongRoute_list.append( reference_ProgressAlongRoute_list[ index ] + \
+                                                  np.sqrt( ( reference_latitude_array[ index + 1 ] - reference_latitude_array[ index ] ) ** 2 + \
+                                                           ( reference_longitude_array[ index + 1 ] - reference_longitude_array[ index ] ) ** 2 ) )
+
+    reference_ProgressAlongRoute_array = np.array( reference_ProgressAlongRoute_list )
+
+    reference_ProgressAlongRoute_array = reference_ProgressAlongRoute_array / np.max( reference_ProgressAlongRoute_array )
+
+    #
+
+    current_latitude_array = np.array( best_pose_df[ 'latitude' ] )
+
+    current_longitude_array = np.array( best_pose_df[ 'longitude' ] )
+
+    current_ProgressAlongRoute_list = []
+
+    for latitude, longitude in zip( current_latitude_array, current_longitude_array ):
+
+        distance_analog_array = ( reference_latitude_array - latitude ) ** 2 + ( reference_longitude_array - longitude ) ** 2
+
+        min_distance_index = np.where( distance_analog_array == np.min( distance_analog_array ) )
+
+        current_ProgressAlongRoute_list.append( reference_ProgressAlongRoute_array[ min_distance_index ][ 0 ] )
+
+    best_pose_df[ 'ProgressAlongRoute' ] = current_ProgressAlongRoute_list
+
+
+# In[13]:
 
 
 def NormalizedTime( chassis_df ):
@@ -117,7 +159,7 @@ def NormalizedTime( chassis_df ):
     chassis_df[ 'NormalizedTime' ] = list( normalized_chassis_time_array )
 
 
-# In[4]:
+# In[14]:
 
 
 def DeltaTime( time_sorted_chassis_df ):
@@ -133,10 +175,12 @@ def DeltaTime( time_sorted_chassis_df ):
     time_sorted_chassis_df[ 'DeltaTime' ] = chassis_delta_time_list
 
 
-# In[3]:
+# In[15]:
 
 
 def Distance( time_sorted_chassis_df ):
+
+    # Legacy
 
     chassis_DeltaTime_array = np.array( time_sorted_chassis_df[ 'DeltaTime' ] ) * 1e-9 # seconds
 
@@ -151,6 +195,85 @@ def Distance( time_sorted_chassis_df ):
         chassis_Distance_list.append( current_index_Distance )
 
     time_sorted_chassis_df[ 'Distance' ] = chassis_Distance_list
+
+
+# ### Functions unrelated to calculated fields but are important vvv
+
+# In[16]:
+
+
+def origin_dir():
+
+    home_dir_list = os.listdir( '/home' )
+
+    for dir in home_dir_list:
+
+        if '_linux' in dir:
+
+            path = f'/home/{dir}/Desktop/TDMprivate'
+
+            if not os.path.exists( path ):
+
+                raise Exception( 'TDMprivate folder does not exist. TDMprivate folder must exist on Desktop. Notify Ryan or ' +
+                                 'Vincent if this message appears.' )
+
+            else:
+
+                return path
+
+
+# In[17]:
+
+
+def retrieve_metadata_df():
+
+    path = f'{ origin_dir() }/metadata/metadata.csv'
+
+    metadata_df = pd.read_csv( f'{ origin_dir() }/metadata/metadata.csv' )
+
+    return metadata_df
+
+
+# In[21]:
+
+
+def list_gmIDs():
+
+    path = f'{ origin_dir() }/data'
+
+    gmID_list = [ file for file in os.listdir( path ) if os.path.isdir( f'{ path }/{ file }' ) ]
+
+    return gmID_list
+
+
+# In[19]:
+
+
+def list_topics():
+
+    gmID_list = list_gmIDs()
+
+    path = f'{ origin_dir() }/data/{ gmID_list[ 0 ] }'
+
+    topic_list = [ file for file in os.listdir( path ) if os.path.isdir( f'{ path }/{ file }' ) ]
+
+    topic_list = [ topic.replace( '_', '/' ) for topic in topic_list ]
+
+    return topic_list
+
+
+# In[20]:
+
+
+def retrieve_gmID_topic( gmID, topic ):
+
+    dir_friendly_topic = topic.replace( '/', '_' )
+
+    path = f'{ origin_dir() }/data/{ gmID }/{ dir_friendly_topic }/{ gmID + dir_friendly_topic }.csv'
+
+    gmID_topic_df = pd.read_csv( path )
+
+    return gmID_topic_df
 
 
 # In[ ]:
