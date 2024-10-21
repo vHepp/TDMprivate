@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[2]:
 
 
 import numpy as np
@@ -11,10 +11,32 @@ import pandas as pd
 import os
 
 
-# In[8]:
+# In[3]:
 
 
 def BinaryDrivingMode( chassis_df ):
+
+    '''
+    Arguments:
+    
+        chassis_df -> A Pandas dataframe containing the data for the chassis topic of a singular groupMetadataID.
+        
+    Internal Task (subroutine):
+    
+        Adds an extra column to the Pandas dataframe 'chassis_df' argument called 'BinaryDrivingMode'. This column is a 
+        calculated column based on the 'drivingMode' column within the 'chassis_df' argument, having a value of 0 when 
+        'drivingMode' has a value of 'COMPLETE_MANUAL' or 'EMERGENCY_MODE', or a value of 1 when 'drivingMode' has a value 
+        of 'COMPLETE_AUTO_DRIVE'
+
+    Output:
+
+        No output. (Only modifies the input 'chassis_df' argument) 
+
+    Purpose:
+
+        Create a column in the chassis dataframe for a singular groupMetadataID that indicates whether the car is in automatic
+        or manual driving mode at a given moment and is easier to work with than the 'drivingMode' column.
+    '''
 
     drive_mode_lst = chassis_df[ 'drivingMode' ].tolist()
 
@@ -37,10 +59,37 @@ def BinaryDrivingMode( chassis_df ):
     chassis_df[ 'BinaryDrivingMode' ] = binary_drive_mode_lst
 
 
-# In[9]:
+# In[4]:
 
 
 def TernaryDrivingModeTransition( time_sorted_chassis_df ):
+
+    '''
+    Arguments:
+    
+        time_sorted_chassis_df -> A Pandas dataframe containing the data for the chassis topic of a singular groupMetadataID 
+                                  that must satisfy two conditions:
+
+                                      1. Must have had the 'BinaryDrivingMode' function run on it previously.
+
+                                      2. Must be sorted by time using the Pandas '.sort_values' method.
+        
+    Internal Task (subroutine):
+    
+        Adds an extra column to the Pandas dataframe 'time_sorted_chassis_df' argument called 'TernaryDrivingModeTransition'. 
+        This column is a calculated column based on the 'BinaryDrivingMode' column within the 'time_sorted_chassis_df' argument,
+        having a value of -1 on rows where 'BinaryDrivingMode' switches from 1 to 0, a value of 1 on rows where 
+        'BinaryDrivingMode' switches from 0 to 1, and a value of 0 on rows where 'BinaryDrivingMode' does not change. 
+
+    Output:
+
+        No output. (Only modifies the input 'time_sorted_chassis_df' argument) 
+
+    Purpose:
+
+        Create a column in the chassis dataframe for a singular groupMetadataID that indicates at what moments the car switches to
+        automatic or manual driving mode or does not change driving mode. An alternative metric for the 'BinaryDrivingMode' column.
+    '''
 
     binary_drive_mode_lst = time_sorted_chassis_df[ 'BinaryDrivingMode' ].tolist()
 
@@ -57,10 +106,34 @@ def TernaryDrivingModeTransition( time_sorted_chassis_df ):
     time_sorted_chassis_df[ 'TernaryDrivingModeTransition' ] = ternary_drive_mode_trans_lst
 
 
-# In[10]:
+# In[5]:
 
 
 def LatLonTotalStdDev( best_pose_df ):
+
+    '''
+    Arguments:
+    
+        best_pose_df -> A Pandas dataframe containing the data for the best_pose topic of a singular groupMetadataID.
+        
+    Internal Task (subroutine):
+    
+        Adds an extra column to the Pandas dataframe 'best_pose_df' argument called 'LatLonTotalStdDev'. This column is a 
+        calculated column based on the 'latitudeStdDev' and 'longitudeStdDev' columns within the 'best_pose_df' argument, 
+        containing a single float value representing a magnitude of the values within the 'latitudeStdDev' and 'longitudeStdDev'
+        columns for each row. This magnitude is calculated via the fomula for Euclidean distance (d = sqrt(x**2 + y**2)), where the
+        x and y values are the values within the 'latitudeStdDev' and 'longitudeStdDev' columns respectively. (The units for the 
+        values in the added 'LatLonTotalStdDev' column, as well as in the 'latitudeStdDev' and 'longitudeStdDev' columns, is meters)
+
+    Output:
+
+        No output. (Only modifies the input 'best_pose_df' argument) 
+
+    Purpose:
+
+        Create a column in the best_pose dataframe for a singular groupMetadataID that combines the values for the standard 
+        deviation in latitude and longitude into a single easier to work with value.
+    '''
 
     lat_stddev_lst = best_pose_df[ 'latitudeStdDev' ].tolist()
 
@@ -79,10 +152,57 @@ def LatLonTotalStdDev( best_pose_df ):
     best_pose_df[ 'LatLonTotalStdDev' ] = latlon_total_stddev_lst
 
 
-# In[11]:
+# In[6]:
 
 
 def ChassisBestPoseMatchedTime( same_gmID_chassis_df, same_gmID_best_pose_df ):
+
+    '''
+    Arguments:
+    
+        same_gmID_chassis_df -> A Pandas dataframe containing the data for the chassis topic of a singular groupMetadataID.
+                                Requirements:
+
+                                    1. Must be for the same groupMetadataID as the 'same_gmID_best_pose_df' argument.
+
+        same_gmID_best_pose_df -> A Pandas dataframe containing the data for the best_pose topic of a singular groupMetadataID.
+                                  Requirements:
+
+                                      1. Must be for the same groupMetadataID as the 'same_gmID_chassis_df' argument.
+        
+    Internal Task (subroutine):
+    
+        Adds an extra column to both the 'same_gmID_chassis_df' and 'same_gmID_best_pose_df' Pandas dataframe arguments called 
+        'ChassisBestPoseMatchedTime'. 
+        
+        The 'ChassisBestPoseMatchedTime' column added to the 'same_gmID_chassis_df' argument contains every time value within the
+        'time' column of 'same_gmID_chassis_df' rounded to the nearest time value to them in the 'time' column of the 
+        'same_gmID_best_pose_df' argument.
+
+        The 'ChassisBestPoseMatchedTime' column added to the 'same_gmID_best_pose_df' argument is an exact copy of the 'time' 
+        column in 'same_gmID_best_pose_df'.
+
+    Output:
+
+        No output. (Only modifies the input 'same_gmID_chassis_df' and 'same_gmID_best_pose_df' arguments) 
+
+    Purpose:
+
+        The 'ChassisBestPoseMatchedTime' column added to both the 'same_gmID_chassis_df' and 'same_gmID_best_pose_df' arguments
+        allow the 'same_gmID_chassis_df' and 'same_gmID_best_pose_df' Pandas dataframes to be inner merged on the 
+        'ChassisBestPoseMatchedTime' column using the Pandas 'merge' function. Ex:
+
+            merged_df = pd.merge( same_gmID_chassis_df, same_gmID_best_pose_df, on = 'ChassisBestPoseMatchedTime', how = 'inner' )
+
+        This is useful because it allows one to compare the data entries within the chassis topic with the data entries within the 
+        best_pose topic that were recorded at approximately the same time.
+
+        (The chassis and best_pose topics for a groupMetadataID are initially not mergable on time due to the fact that data in the 
+        chassis topic is recorded at a much higher time frequency than the data in the best_pose topic [every 0.03 seconds compared
+        to every 1 second], and that the probabilty of a row of data being recorded in the chassis and best_pose topics at the 
+        exact same nanosecond [which is the unit time is recorded in within the topcis] is exceptionally low. The 
+        'ChassisBestPoseMatchedTime' column introduced by this function is one way to solve these issues)
+    '''
 
     chassis_time_array = np.array( same_gmID_chassis_df[ 'time' ] )
 
@@ -107,10 +227,14 @@ def ChassisBestPoseMatchedTime( same_gmID_chassis_df, same_gmID_best_pose_df ):
     same_gmID_best_pose_df[ 'ChassisBestPoseMatchedTime' ] = same_gmID_best_pose_df[ 'time' ]
 
 
-# In[12]:
+# In[7]:
 
 
 def ProgressAlongRoute( best_pose_df, time_sorted_reference_best_pose_df):
+
+    '''
+    No documentation for now, needs to be fixed
+    '''
 
     reference_ProgressAlongRoute_list = [ 0 ]
 
@@ -147,40 +271,97 @@ def ProgressAlongRoute( best_pose_df, time_sorted_reference_best_pose_df):
     best_pose_df[ 'ProgressAlongRoute' ] = current_ProgressAlongRoute_list
 
 
-# In[13]:
+# In[8]:
 
 
-def NormalizedTime( chassis_df ):
+def NormalizedTime( topic_df ):
 
-    chassis_time_array = np.array( chassis_df[ 'time' ] )
+    '''
+    Arguments:
+    
+        topic_df -> A Pandas dataframe containing the data for one of the topics of a singular groupMetadataID.
+                    Requirements:
 
-    normalized_chassis_time_array = chassis_time_array - np.min( chassis_time_array )
+                        1. The topic must have a 'time' column
+        
+    Internal Task (subroutine):
+    
+        Adds an extra column to the Pandas dataframe 'topic_df' argument called 'NormalizedTime'. This column is simply the 'time'
+        column in 'topic_df' with all of its time values subtracted by the minimum time value in the 'time' column.
 
-    chassis_df[ 'NormalizedTime' ] = list( normalized_chassis_time_array )
+    Output:
+
+        No output. (Only modifies the input 'topic_df' argument) 
+
+    Purpose:
+
+        The 'NormalizedTime' column created by this function for a topic is essentially that topic's 'time' column, but instead of 
+        treating the start, end, and all moments in-between of a groupMetadataID's run as time values in nanoseconds representing 
+        datetimes, it treats the start as being at 0 nanoseconds, the end as the total duration of the run in nanoseconds, and all
+        the moments in-between as how long it has been since the start of the run in nanoseconds.
+
+        The 'NormalizedTime' column is a quick and dirty way to compare two or more different groupMetadataIDs' runs (on the same 
+        route) by time. It should be kept in mind though that time is a poor measure of position along a route, as not all runs
+        on a route take the same amount of time, nor do they always start at the exact same position.
+    '''
+
+    topic_time_array = np.array( topic_df[ 'time' ] )
+
+    normalized_topic_time_array = topic_time_array - np.min( topic_time_array )
+
+    topic_df[ 'NormalizedTime' ] = list( normalized_topic_time_array )
 
 
-# In[14]:
+# In[9]:
 
 
-def DeltaTime( time_sorted_chassis_df ):
+def DeltaTime( time_sorted_topic_df ):
 
-    chassis_time_array = np.array( time_sorted_chassis_df[ 'time' ] )
+    '''
+    Arguments:
+    
+        time_sorted_topic_df -> A Pandas dataframe containing the data for one of the topics of a singular groupMetadataID.
+                                Requirements:
+                                    
+                                    1. The topic must have a 'time' column
+                                    
+                                    2. Must be sorted by time using the Pandas '.sort_values' method.
+        
+    Internal Task (subroutine):
+    
+        Adds an extra column to the Pandas dataframe 'time_sorted_topic_df' argument called 'DeltaTime'. This column contains 
+        values representing the time elasped between each of the time values in the 'time' column of 'time_sorted_topic_df'.
+        (in nanoseconds)
 
-    chassis_delta_time_array = np.diff( chassis_time_array )
+    Output:
 
-    chassis_delta_time_list = list( chassis_delta_time_array )
+        No output. (Only modifies the input 'time_sorted_topic_df' argument) 
 
-    chassis_delta_time_list = [ chassis_delta_time_list[ 0 ] ] + chassis_delta_time_list
+    Purpose:
 
-    time_sorted_chassis_df[ 'DeltaTime' ] = chassis_delta_time_list
+        The 'DeltaTime' column was originally created for integration purposes, but now has no current use. It may still be useful
+        however.
+    '''
+
+    topic_time_array = np.array( time_sorted_topic_df[ 'time' ] )
+
+    topic_delta_time_array = np.diff( topic_time_array )
+
+    topic_delta_time_list = list( topic_delta_time_array )
+
+    topic_delta_time_list = [ topic_delta_time_list[ 0 ] ] + topic_delta_time_list
+
+    time_sorted_topic_df[ 'DeltaTime' ] = topic_delta_time_list
 
 
-# In[15]:
+# In[10]:
 
 
 def Distance( time_sorted_chassis_df ):
 
-    # Legacy
+    '''
+    Do not use this function, it is legacy
+    '''
 
     chassis_DeltaTime_array = np.array( time_sorted_chassis_df[ 'DeltaTime' ] ) * 1e-9 # seconds
 
@@ -199,10 +380,31 @@ def Distance( time_sorted_chassis_df ):
 
 # ### Functions unrelated to calculated fields but are important vvv
 
-# In[16]:
+# In[11]:
 
 
 def origin_dir():
+
+    '''
+    Arguments:
+    
+        No arguments.
+        
+    Internal Task (subroutine):
+    
+        No internal task.
+
+    Output:
+
+        Outputs the path to the TDMprivate folder on one's AWS desktop, if it exists. Otherwise, raises an error.
+
+        (a string)
+
+    Purpose:
+
+        A quick way to obtain the path to the TDMprivate folder, regardless of the AWS user. This path is used a lot for reading 
+        data.
+    '''
 
     home_dir_list = os.listdir( '/home' )
 
@@ -222,10 +424,14 @@ def origin_dir():
                 return path
 
 
-# In[17]:
+# In[12]:
 
 
 def retrieve_metadata_df():
+
+    '''
+    Do not use this function, it is legacy
+    '''
 
     path = f'{ origin_dir() }/metadata/metadata.csv'
 
@@ -234,10 +440,31 @@ def retrieve_metadata_df():
     return metadata_df
 
 
-# In[21]:
+# In[13]:
 
 
 def list_gmIDs():
+
+    '''
+    Arguments:
+    
+        No arguments.
+        
+    Internal Task (subroutine):
+    
+        No internal task.
+
+    Output:
+
+        Outputs a list of the names of all the groupMetadataIDs with data available to read in the data folder of the TDMprivate 
+        folder.
+
+        (a list of strings)
+
+    Purpose:
+
+        A quick way to obtain and choose the groupMetadataIDs one wants data from.
+    '''
 
     path = f'{ origin_dir() }/data'
 
@@ -246,10 +473,31 @@ def list_gmIDs():
     return gmID_list
 
 
-# In[19]:
+# In[14]:
 
 
 def list_topics():
+
+    '''
+    Arguments:
+    
+        No arguments.
+        
+    Internal Task (subroutine):
+    
+        No internal task.
+
+    Output:
+
+        Outputs a list of the names of all the topics with data available to be read for each of the groupMetadataIDs in the data
+        folder of the TDMprivate folder.
+
+        (a list of strings)
+
+    Purpose:
+
+        A quick way to obtain and choose the topics one wants data for, for a groupMetadataID(s).
+    '''
 
     gmID_list = list_gmIDs()
 
@@ -262,10 +510,33 @@ def list_topics():
     return topic_list
 
 
-# In[20]:
+# In[15]:
 
 
 def retrieve_gmID_topic( gmID, topic ):
+
+    '''
+    Arguments:
+    
+        gmID -> The name of a singular groupMetadataID one wants data from (a string).
+
+        topic - > The name of a singular topic one wants data for, for the given groupMetadataID (a string).
+        
+    Internal Task (subroutine):
+    
+        No internal task.
+
+    Output:
+
+        Outputs a Pandas dataframe containing the data for the requested topic for the requested groupMetadataID.
+
+        (a Pandas dataframe)
+
+    Purpose:
+
+        A quick way to obtain the data for the requested topic for the requested groupMetadataID without needing to work with the
+        directory structure of TDMprivate.
+    '''
 
     dir_friendly_topic = topic.replace( '/', '_' )
 
@@ -276,10 +547,30 @@ def retrieve_gmID_topic( gmID, topic ):
     return gmID_topic_df
 
 
-# In[1]:
+# In[16]:
 
 
 def give_route( gmID ):
+
+    '''
+    Arguments:
+    
+        gmID -> The name of a singular groupMetadataID (a string).
+        
+    Internal Task (subroutine):
+    
+        No internal task.
+
+    Output:
+
+        Outputs the name of the route the inputted groupMetadataID is associated with. Is always 'Red', 'Green', or 'Blue'.
+
+        (a string)
+
+    Purpose:
+
+        A quick way to check what route the requested groupMetadataID is on.
+    '''
 
     red_route_gmID_list = [ 'c0555ef0-f50f-11ee-8afa-cb629b0d53e6', '1bbbfbae-c839-11ee-a7fc-dd032dba19e8', '05c7c824-cab8-11ee-aa4d-1d66adf2f0c7', '2462c9d0-eecd-11ee-9385-ef789ffde1d3', '94c53148-eeed-11ee-9385-ef789ffde1d3', '88a68dd8-eef9-11ee-9385-ef789ffde1d3', '4ed017ee-ef05-11ee-9385-ef789ffde1d3', 'ce6465b6-f51b-11ee-8afa-cb629b0d53e6', 'aa5dbcd2-ef10-11ee-9385-ef789ffde1d3', 'e7b934a8-ef1a-11ee-9385-ef789ffde1d3', '85b6e70e-ef7a-11ee-b966-fb353e7798cd', '219f7eb8-ef87-11ee-b966-fb353e7798cd', '3d2d29ec-ef95-11ee-b966-fb353e7798cd', 'd3698592-ef9d-11ee-b966-fb353e7798cd', 'fd1ab258-efa7-11ee-b966-fb353e7798cd', '8347b862-efad-11ee-b966-fb353e7798cd', '817d6848-efb6-11ee-b966-fb353e7798cd', 'be857244-efc0-11ee-b966-fb353e7798cd', 'fc211bb2-efca-11ee-b966-fb353e7798cd', '6d2ea45a-c839-11ee-a7fc-dd032dba19e8', '01e65360-efd4-11ee-b966-fb353e7798cd', '1b6aca0e-efdf-11ee-b966-fb353e7798cd', '72a03d4a-efe9-11ee-b966-fb353e7798cd', '8fa6fe80-c869-11ee-a7fc-dd032dba19e8', '7fb7b9c0-c881-11ee-a7fc-dd032dba19e8', '3151e9e2-eff3-11ee-b966-fb353e7798cd', 'f41cbd44-eff8-11ee-b966-fb353e7798cd', '5a4bccf4-effe-11ee-b966-fb353e7798cd', '2f95c748-f009-11ee-b966-fb353e7798cd', 'fcc6fcd2-f013-11ee-b966-fb353e7798cd', '51ef6da6-ca9f-11ee-909c-e1dc60cf66f9', '8437f77a-cab7-11ee-909c-e1dc60cf66f9', 'f43b6a70-f01e-11ee-b966-fb353e7798cd', '457dc5ee-f02a-11ee-b966-fb353e7798cd', '853ef120-cad3-11ee-909c-e1dc60cf66f9', '2a61b8a8-f528-11ee-8afa-cb629b0d53e6', '41b67a28-f52f-11ee-8afa-cb629b0d53e6', 'fe973c9c-f53c-11ee-8afa-cb629b0d53e6', '96f7a614-f549-11ee-8afa-cb629b0d53e6', 'd12cd1c4-caec-11ee-909c-e1dc60cf66f9', 'c338788a-d324-11ee-b437-336917683bb8', 'c9c6856c-d33c-11ee-b437-336917683bb8', '787f70da-f036-11ee-b966-fb353e7798cd', '6daff50c-f041-11ee-b972-fb353e7798cd', '23a7aa3e-f048-11ee-b97d-fb353e7798cd', 'ef63db62-f051-11ee-b986-fb353e7798cd', '48021fe0-f05c-11ee-b992-fb353e7798cd', 'bb52690a-f066-11ee-b99e-fb353e7798cd', '599673dc-f070-11ee-b9a9-fb353e7798cd', '26af7004-f07a-11ee-b9b2-fb353e7798cd', '5230b9be-f083-11ee-b9b8-fb353e7798cd', '4bbe3c64-f088-11ee-b9c3-fb353e7798cd', '5c2ad8ec-f08c-11ee-b9c8-fb353e7798cd', '6c5f7416-f096-11ee-b9d4-fb353e7798cd', 'ede139be-f098-11ee-b9d8-fb353e7798cd', 'dbff355c-f0a2-11ee-b9e3-fb353e7798cd', 'eb22edf4-f0ab-11ee-b9e9-fb353e7798cd', 'd1d69a76-f0b5-11ee-b9f0-fb353e7798cd', '906d3c4e-f0be-11ee-b9fb-fb353e7798cd', '2bb03aaa-f0c7-11ee-ba06-fb353e7798cd', 'dd72fdec-f0cf-11ee-ba0d-fb353e7798cd', '211bdb36-f0da-11ee-ba1b-fb353e7798cd', 'f0eebb6a-f0dc-11ee-ba1e-fb353e7798cd', '1f70a4f0-f0e0-11ee-ba1e-fb353e7798cd', 'f711e68e-f0e1-11ee-ba1f-fb353e7798cd', '622bd2e8-f0e4-11ee-ba1f-fb353e7798cd', '7d27535e-f0e6-11ee-ba21-fb353e7798cd', '8dbbbf1c-f0ef-11ee-ba29-fb353e7798cd', 'd21965e6-f0fa-11ee-ba37-fb353e7798cd', '171c50bc-f106-11ee-ba42-fb353e7798cd', 'de933de8-f112-11ee-ba4d-fb353e7798cd', '9189a2a8-f121-11ee-ba5b-fb353e7798cd', 'f755cf60-f132-11ee-ba6d-fb353e7798cd', '9798fe24-f143-11ee-ba78-fb353e7798cd', '35518ec4-f153-11ee-ba88-fb353e7798cd', 'ecebb942-f162-11ee-ba97-fb353e7798cd', '1ee938a2-f172-11ee-baa6-fb353e7798cd', '38ac9526-f182-11ee-bab0-fb353e7798cd', '6f5b3612-f18d-11ee-bab8-fb353e7798cd', 'd24820c8-f197-11ee-babe-fb353e7798cd', 'bf518644-f1a6-11ee-bac9-fb353e7798cd', '3950298e-f1b4-11ee-bad3-fb353e7798cd', 'cccc7d32-f1c0-11ee-bada-fb353e7798cd', 'a6895b74-f1cd-11ee-bae2-fb353e7798cd', '61b4e416-f1da-11ee-bae8-fb353e7798cd', 'fc1e1b6a-f1e6-11ee-baf6-fb353e7798cd', 'b82476fe-f1f3-11ee-baff-fb353e7798cd', '286e019a-f204-11ee-bb07-fb353e7798cd', '84d96f18-f214-11ee-bb13-fb353e7798cd', '88dd6fbe-f224-11ee-bb21-fb353e7798cd', '61b12e7a-f234-11ee-bb33-fb353e7798cd', '7cbd932e-f244-11ee-bb3f-fb353e7798cd', 'cf831f42-f353-11ee-bb4e-fb353e7798cd', '43a1a35e-f362-11ee-bb4e-fb353e7798cd', 'bfde2aec-f370-11ee-bb4e-fb353e7798cd', '0b72a836-f37e-11ee-bb4e-fb353e7798cd', '662741a4-f38a-11ee-bb4e-fb353e7798cd', '65cfbfd6-f396-11ee-bb4e-fb353e7798cd', 'c25271be-f3a4-11ee-bb4e-fb353e7798cd', '868de15e-f3b3-11ee-bb4e-fb353e7798cd', '3344a3c0-f502-11ee-8afa-cb629b0d53e6' ]
 
