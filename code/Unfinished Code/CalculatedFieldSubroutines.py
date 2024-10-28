@@ -271,6 +271,174 @@ def ProgressAlongRoute( best_pose_df, time_sorted_reference_best_pose_df):
     best_pose_df[ 'ProgressAlongRoute' ] = current_ProgressAlongRoute_list
 
 
+# In[4]:
+
+
+def ProgressAlongRoute_v2( time_sorted_best_pose_df, time_sorted_reference_best_pose_df = 'auto', num_of_partitions = 100, \
+                           max_distance_coefficient = 5 ):
+
+    if ( time_sorted_reference_best_pose_df == 'auto' ):
+
+        if ( give_route( time_sorted_best_pose_df[ 'groupMetadataID' ][ 0 ] ) == 'Red' ):
+
+            reference_best_pose_gmID = '9798fe24-f143-11ee-ba78-fb353e7798cd'
+
+        elif ( give_route( time_sorted_best_pose_df[ 'groupMetadataID' ][ 0 ] ) == 'Green' ):
+
+            reference_best_pose_gmID = '3a7dc9a6-f042-11ee-b974-fb353e7798cd'
+
+        else:
+
+            reference_best_pose_gmID = '3d2a80f0-ec81-11ee-b297-3b0ad9d5d6c6'
+            
+        time_sorted_reference_best_pose_df = retrieve_gmID_topic( gmID = reference_best_pose_gmID, 
+                                                                  topic = '/apollo/sensor/gnss/best/pose' )
+
+        time_sorted_reference_best_pose_df.sort_values( 'time' )
+
+    reference_latitude_array = np.array( time_sorted_reference_best_pose_df[ 'latitude' ] )
+
+    reference_longitude_array = np.array( time_sorted_reference_best_pose_df[ 'longitude' ] )
+
+    reference_delta_latitude_array = np.diff( reference_latitude_array )
+
+    reference_delta_longitude_array = np.diff( reference_longitude_array )
+
+    reference_delta_distance_analog_array = np.sqrt( reference_delta_latitude_array ** 2 + reference_delta_longitude_array ** 2 )
+
+    reference_ProgressAlongRoute_list = [ 0 ]
+
+    for index, delta_distance_analog in enumerate( reference_delta_distance_analog_array ):
+
+        running_delta_distance_analog = reference_ProgressAlongRoute_list[ index ] + delta_distance_analog
+
+        reference_ProgressAlongRoute_list.append( running_delta_distance_analog )
+    
+    reference_ProgressAlongRoute_array = np.array( reference_ProgressAlongRoute_list )
+
+    reference_ProgressAlongRoute_array = reference_ProgressAlongRoute_array / np.max( reference_ProgressAlongRoute_array )
+
+    #
+
+    partition_size = 1 / num_of_partitions
+
+    reference_ProgressAlongRoute_partition_array = reference_ProgressAlongRoute_array // partition_size
+
+    reference_ProgressAlongRoute_partition_array[ reference_ProgressAlongRoute_partition_array == \
+                                                  num_of_partitions ] = num_of_partitions - 1
+
+    #
+
+    latitude_array = np.array( time_sorted_best_pose_df[ 'latitude' ] )
+
+    longitude_array = np.array( time_sorted_best_pose_df[ 'longitude' ] )
+
+    ProgressAlongRoute_list = []
+
+    ProgressAlongRoute_partition_list = []
+    #
+
+    avg_reference_delta_distance_analog = np.median( reference_delta_distance_analog_array )
+
+    max_distance_analog = avg_reference_delta_distance_analog * max_distance_coefficient
+
+    #
+
+    full_scan = True
+
+    for index, ( latitude, longitude ) in enumerate( zip( latitude_array, longitude_array ) ):
+
+        if ( full_scan == True ):
+
+            distance_analog_array = np.sqrt( ( reference_latitude_array - latitude ) ** 2 + \
+                                             ( reference_longitude_array - longitude ) ** 2 )
+
+            min_distance_analog = np.min( distance_analog_array )
+
+            if ( min_distance_analog > max_distance_analog ):
+
+                ProgressAlongRoute_list.append( np.nan )
+
+                ProgressAlongRoute_partition_list.append( np.nan )
+
+                continue
+
+            full_scan = False
+
+            min_distance_analog_index = np.where( distance_analog_array == min_distance_analog )
+
+            assigned_ProgressAlongRoute = reference_ProgressAlongRoute_array[ min_distance_analog_index ][ 0 ]
+
+            assigned_ProgressAlongRoute_partition = reference_ProgressAlongRoute_partition_array[ min_distance_analog_index ][ 0 ]
+
+        else:
+
+            reference_subset_middle_parititon_num = ProgressAlongRoute_partition_list[ index - 1 ]
+
+            reference_subset_lower_partition_num = reference_subset_middle_parititon_num - 1
+
+            reference_subset_upper_partition_num = reference_subset_middle_parititon_num + 1
+
+            if ( reference_subset_lower_partition_num < 0 ):
+
+                reference_subset_lower_partition_num = num_of_partitions - 1
+
+            if ( reference_subset_upper_partition_num > num_of_partitions - 1 ):
+
+                reference_subset_upper_partition_num = 0
+
+            reference_subset_indexes = np.where( ( reference_ProgressAlongRoute_partition_array == reference_subset_lower_partition_num ) | \
+                                                 ( reference_ProgressAlongRoute_partition_array == reference_subset_middle_parititon_num ) | \
+                                                 ( reference_ProgressAlongRoute_partition_array == reference_subset_upper_partition_num ) )
+
+            reference_subset_latitude_array = reference_latitude_array[ reference_subset_indexes ]
+
+            reference_subset_longitude_array = reference_longitude_array[ reference_subset_indexes ]
+
+            subset_distance_analog_array = np.sqrt( ( reference_subset_latitude_array - latitude ) ** 2 + \
+                                                    ( reference_subset_longitude_array - longitude ) ** 2 )
+
+            min_subset_distance_analog = np.min( subset_distance_analog_array )
+
+            if ( min_subset_distance_analog > max_distance_analog ):
+
+                ProgressAlongRoute_list.append( np.nan )
+
+                ProgressAlongRoute_partition_list.append( np.nan )
+
+                full_scan = True
+
+                continue
+
+            min_subset_distance_analog_index = np.where( subset_distance_analog_array == min_subset_distance_analog )
+
+            reference_subset_ProgressAlongRoute_array = reference_ProgressAlongRoute_array[ reference_subset_indexes ]
+
+            reference_subset_ProgressAlongRoute_partition_array = reference_ProgressAlongRoute_partition_array[ reference_subset_indexes ]
+
+            assigned_ProgressAlongRoute = reference_subset_ProgressAlongRoute_array[ min_subset_distance_analog_index ][ 0 ]
+
+            assigned_ProgressAlongRoute_partition = reference_subset_ProgressAlongRoute_partition_array[ min_subset_distance_analog_index ][ 0 ]
+
+        ProgressAlongRoute_list.append( assigned_ProgressAlongRoute )
+
+        ProgressAlongRoute_partition_list.append( assigned_ProgressAlongRoute_partition )
+
+    time_sorted_best_pose_df[ 'ProgressAlongRoute' ] = ProgressAlongRoute_list
+
+    time_sorted_best_pose_df[ 'PartitionNumber' ] = ProgressAlongRoute_partition_list
+
+    #
+
+    if ( np.any( np.isnan( np.array( time_sorted_best_pose_df[ 'ProgressAlongRoute' ] ) ) ) == True ):
+
+        return True
+
+    else:
+
+        return False
+
+
 # In[8]:
 
 
@@ -593,6 +761,34 @@ def give_route( gmID ):
     else:
 
         raise Exception( f'{ gmID } is not valid' )
+
+
+# In[1]:
+
+
+def list_whitelisted_gmIDs():
+
+    gmIDs_set = set( list_gmIDs() )
+
+    blacklisted_gmIDs_set = set( [ '879e3fa2-f085-11ee-b9bd-fb353e7798cd', '900701bc-f0a6-11ee-b9e4-fb353e7798cd', '6f5b3612-f18d-11ee-bab8-fb353e7798cd', '471890c0-f0b9-11ee-b9f5-fb353e7798cd', '3b6d2a5c-f0c2-11ee-ba01-fb353e7798cd', 'a2ed8b42-f089-11ee-b9c3-fb353e7798cd', '787f70da-f036-11ee-b966-fb353e7798cd', '6458c26e-eab9-11ee-b297-3b0ad9d5d6c6', '00ff88b6-f0a3-11ee-b9e3-fb353e7798cd', '7d27535e-f0e6-11ee-ba21-fb353e7798cd', '23765aa8-eaf1-11ee-b297-3b0ad9d5d6c6', 'f93290be-eafe-11ee-b297-3b0ad9d5d6c6', '54a02cb8-eb4f-11ee-b297-3b0ad9d5d6c6', '2f2939cc-f228-11ee-bb28-fb353e7798cd', '48021fe0-f05c-11ee-b992-fb353e7798cd', '2837eb9c-9542-11ee-956e-9da2d070324c', '593d4b54-d0a9-11ee-9435-f7e542e2436c', 'd54c11ca-eae5-11ee-b297-3b0ad9d5d6c6', '6f887868-ed21-11ee-9385-ef789ffde1d3', '45ad3a9a-edb4-11ee-9385-ef789ffde1d3', '4ed017ee-ef05-11ee-9385-ef789ffde1d3', '81a5a96e-f0c6-11ee-ba06-fb353e7798cd', '05d0240e-eadb-11ee-b297-3b0ad9d5d6c6', '6c415180-f0bd-11ee-b9fa-fb353e7798cd', '662741a4-f38a-11ee-bb4e-fb353e7798cd', '60c57e4e-eb4a-11ee-b297-3b0ad9d5d6c6', 'cd11fc28-f21e-11ee-bb1c-fb353e7798cd', 'fa852f30-f210-11ee-bb10-fb353e7798cd', '3950298e-f1b4-11ee-bad3-fb353e7798cd', '2c8690b4-f09f-11ee-b9de-fb353e7798cd', '26af7004-f07a-11ee-b9b2-fb353e7798cd', '6c5f7416-f096-11ee-b9d4-fb353e7798cd', '38ac9526-f182-11ee-bab0-fb353e7798cd', '81acf35c-eac4-11ee-b297-3b0ad9d5d6c6', '86841630-d9d0-11ee-a158-97f8443fd730', '781c0bcc-eb21-11ee-b297-3b0ad9d5d6c6', '2bb03aaa-f0c7-11ee-ba06-fb353e7798cd', '906d3c4e-f0be-11ee-b9fb-fb353e7798cd', '878e1a02-f092-11ee-b9cf-fb353e7798cd', '606347dc-ed12-11ee-9385-ef789ffde1d3', 'cccc7d32-f1c0-11ee-bada-fb353e7798cd', '6daff50c-f041-11ee-b972-fb353e7798cd', 'ba80ba8c-f0ce-11ee-ba0d-fb353e7798cd', 'bf518644-f1a6-11ee-bac9-fb353e7798cd', '3a116996-93a9-11ee-956e-9da2d070324c', '56b8baa4-f0b5-11ee-b9f0-fb353e7798cd', 'bb52690a-f066-11ee-b99e-fb353e7798cd', 'a437811e-ccf4-11ee-9435-f7e542e2436c', '7aa336e6-f0b1-11ee-b9ed-fb353e7798cd', '986a0b90-f215-11ee-bb15-fb353e7798cd', 'ef63db62-f051-11ee-b986-fb353e7798cd', 'd1d69a76-f0b5-11ee-b9f0-fb353e7798cd', '57a2192c-f21a-11ee-bb17-fb353e7798cd', 'e9e14d3a-eb17-11ee-b297-3b0ad9d5d6c6', '0b72a836-f37e-11ee-bb4e-fb353e7798cd', '8be24d52-f0ca-11ee-ba0a-fb353e7798cd', 'd4b936f6-eb36-11ee-b297-3b0ad9d5d6c6', '599673dc-f070-11ee-b9a9-fb353e7798cd', 'cc0299e6-eb3e-11ee-b297-3b0ad9d5d6c6', 'b6227b56-f08d-11ee-b9c9-fb353e7798cd', 'fe729430-f232-11ee-bb32-fb353e7798cd', 'eb22edf4-f0ab-11ee-b9e9-fb353e7798cd', 'fc1e1b6a-f1e6-11ee-baf6-fb353e7798cd', '61b4e416-f1da-11ee-bae8-fb353e7798cd', '31b48540-f09b-11ee-b9da-fb353e7798cd', '240ebe64-f0d3-11ee-ba14-fb353e7798cd', 'bfde2aec-f370-11ee-bb4e-fb353e7798cd', 'b2f58080-f223-11ee-bb20-fb353e7798cd', '4bbe3c64-f088-11ee-b9c3-fb353e7798cd', 'b2bfb60c-f0ad-11ee-b9ea-fb353e7798cd', 'ede139be-f098-11ee-b9d8-fb353e7798cd', 'bcf44e58-eb0d-11ee-b297-3b0ad9d5d6c6', 'a6895b74-f1cd-11ee-bae2-fb353e7798cd', 'e640cf0a-f096-11ee-b9d5-fb353e7798cd', '1f70a4f0-f0e0-11ee-ba1e-fb353e7798cd', '41cd65b4-f0aa-11ee-b9e8-fb353e7798cd', '621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6', 'dbff355c-f0a2-11ee-b9e3-fb353e7798cd', '23a7aa3e-f048-11ee-b97d-fb353e7798cd', '5c2ad8ec-f08c-11ee-b9c8-fb353e7798cd', '079f0d30-eb09-11ee-b297-3b0ad9d5d6c6', 'baec243e-eacf-11ee-b297-3b0ad9d5d6c6', '5230b9be-f083-11ee-b9b8-fb353e7798cd' ] )
+
+    whitelisted_gmIDs_set = gmIDs_set - blacklisted_gmIDs_set
+
+    return list( whitelisted_gmIDs_set )
+
+
+# In[2]:
+
+
+def list_blacklisted_gmIDs():
+
+    gmIDs_set = set( list_gmIDs() )
+
+    blacklisted_gmIDs_set = set( [ '879e3fa2-f085-11ee-b9bd-fb353e7798cd', '900701bc-f0a6-11ee-b9e4-fb353e7798cd', '6f5b3612-f18d-11ee-bab8-fb353e7798cd', '471890c0-f0b9-11ee-b9f5-fb353e7798cd', '3b6d2a5c-f0c2-11ee-ba01-fb353e7798cd', 'a2ed8b42-f089-11ee-b9c3-fb353e7798cd', '787f70da-f036-11ee-b966-fb353e7798cd', '6458c26e-eab9-11ee-b297-3b0ad9d5d6c6', '00ff88b6-f0a3-11ee-b9e3-fb353e7798cd', '7d27535e-f0e6-11ee-ba21-fb353e7798cd', '23765aa8-eaf1-11ee-b297-3b0ad9d5d6c6', 'f93290be-eafe-11ee-b297-3b0ad9d5d6c6', '54a02cb8-eb4f-11ee-b297-3b0ad9d5d6c6', '2f2939cc-f228-11ee-bb28-fb353e7798cd', '48021fe0-f05c-11ee-b992-fb353e7798cd', '2837eb9c-9542-11ee-956e-9da2d070324c', '593d4b54-d0a9-11ee-9435-f7e542e2436c', 'd54c11ca-eae5-11ee-b297-3b0ad9d5d6c6', '6f887868-ed21-11ee-9385-ef789ffde1d3', '45ad3a9a-edb4-11ee-9385-ef789ffde1d3', '4ed017ee-ef05-11ee-9385-ef789ffde1d3', '81a5a96e-f0c6-11ee-ba06-fb353e7798cd', '05d0240e-eadb-11ee-b297-3b0ad9d5d6c6', '6c415180-f0bd-11ee-b9fa-fb353e7798cd', '662741a4-f38a-11ee-bb4e-fb353e7798cd', '60c57e4e-eb4a-11ee-b297-3b0ad9d5d6c6', 'cd11fc28-f21e-11ee-bb1c-fb353e7798cd', 'fa852f30-f210-11ee-bb10-fb353e7798cd', '3950298e-f1b4-11ee-bad3-fb353e7798cd', '2c8690b4-f09f-11ee-b9de-fb353e7798cd', '26af7004-f07a-11ee-b9b2-fb353e7798cd', '6c5f7416-f096-11ee-b9d4-fb353e7798cd', '38ac9526-f182-11ee-bab0-fb353e7798cd', '81acf35c-eac4-11ee-b297-3b0ad9d5d6c6', '86841630-d9d0-11ee-a158-97f8443fd730', '781c0bcc-eb21-11ee-b297-3b0ad9d5d6c6', '2bb03aaa-f0c7-11ee-ba06-fb353e7798cd', '906d3c4e-f0be-11ee-b9fb-fb353e7798cd', '878e1a02-f092-11ee-b9cf-fb353e7798cd', '606347dc-ed12-11ee-9385-ef789ffde1d3', 'cccc7d32-f1c0-11ee-bada-fb353e7798cd', '6daff50c-f041-11ee-b972-fb353e7798cd', 'ba80ba8c-f0ce-11ee-ba0d-fb353e7798cd', 'bf518644-f1a6-11ee-bac9-fb353e7798cd', '3a116996-93a9-11ee-956e-9da2d070324c', '56b8baa4-f0b5-11ee-b9f0-fb353e7798cd', 'bb52690a-f066-11ee-b99e-fb353e7798cd', 'a437811e-ccf4-11ee-9435-f7e542e2436c', '7aa336e6-f0b1-11ee-b9ed-fb353e7798cd', '986a0b90-f215-11ee-bb15-fb353e7798cd', 'ef63db62-f051-11ee-b986-fb353e7798cd', 'd1d69a76-f0b5-11ee-b9f0-fb353e7798cd', '57a2192c-f21a-11ee-bb17-fb353e7798cd', 'e9e14d3a-eb17-11ee-b297-3b0ad9d5d6c6', '0b72a836-f37e-11ee-bb4e-fb353e7798cd', '8be24d52-f0ca-11ee-ba0a-fb353e7798cd', 'd4b936f6-eb36-11ee-b297-3b0ad9d5d6c6', '599673dc-f070-11ee-b9a9-fb353e7798cd', 'cc0299e6-eb3e-11ee-b297-3b0ad9d5d6c6', 'b6227b56-f08d-11ee-b9c9-fb353e7798cd', 'fe729430-f232-11ee-bb32-fb353e7798cd', 'eb22edf4-f0ab-11ee-b9e9-fb353e7798cd', 'fc1e1b6a-f1e6-11ee-baf6-fb353e7798cd', '61b4e416-f1da-11ee-bae8-fb353e7798cd', '31b48540-f09b-11ee-b9da-fb353e7798cd', '240ebe64-f0d3-11ee-ba14-fb353e7798cd', 'bfde2aec-f370-11ee-bb4e-fb353e7798cd', 'b2f58080-f223-11ee-bb20-fb353e7798cd', '4bbe3c64-f088-11ee-b9c3-fb353e7798cd', 'b2bfb60c-f0ad-11ee-b9ea-fb353e7798cd', 'ede139be-f098-11ee-b9d8-fb353e7798cd', 'bcf44e58-eb0d-11ee-b297-3b0ad9d5d6c6', 'a6895b74-f1cd-11ee-bae2-fb353e7798cd', 'e640cf0a-f096-11ee-b9d5-fb353e7798cd', '1f70a4f0-f0e0-11ee-ba1e-fb353e7798cd', '41cd65b4-f0aa-11ee-b9e8-fb353e7798cd', '621c07b8-eaaf-11ee-b297-3b0ad9d5d6c6', 'dbff355c-f0a2-11ee-b9e3-fb353e7798cd', '23a7aa3e-f048-11ee-b97d-fb353e7798cd', '5c2ad8ec-f08c-11ee-b9c8-fb353e7798cd', '079f0d30-eb09-11ee-b297-3b0ad9d5d6c6', 'baec243e-eacf-11ee-b297-3b0ad9d5d6c6', '5230b9be-f083-11ee-b9b8-fb353e7798cd' ] )
+
+    blacklisted_gmIDs_set = gmIDs_set & blacklisted_gmIDs_set
+
+    return list( blacklisted_gmIDs_set )
 
 
 # In[ ]:
