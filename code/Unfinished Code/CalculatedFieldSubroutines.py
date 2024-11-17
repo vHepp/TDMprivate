@@ -271,7 +271,7 @@ def ProgressAlongRoute( best_pose_df, time_sorted_reference_best_pose_df):
     best_pose_df[ 'ProgressAlongRoute' ] = current_ProgressAlongRoute_list
 
 
-# In[4]:
+# In[8]:
 
 
 def ProgressAlongRoute_v2( time_sorted_best_pose_df, time_sorted_reference_best_pose_df = 'auto', num_of_partitions = 100, \
@@ -439,7 +439,7 @@ def ProgressAlongRoute_v2( time_sorted_best_pose_df, time_sorted_reference_best_
         return False
 
 
-# In[8]:
+# In[9]:
 
 
 def NormalizedTime( topic_df ):
@@ -480,7 +480,7 @@ def NormalizedTime( topic_df ):
     topic_df[ 'NormalizedTime' ] = list( normalized_topic_time_array )
 
 
-# In[9]:
+# In[10]:
 
 
 def DeltaTime( time_sorted_topic_df ):
@@ -522,7 +522,7 @@ def DeltaTime( time_sorted_topic_df ):
     time_sorted_topic_df[ 'DeltaTime' ] = topic_delta_time_list
 
 
-# In[10]:
+# In[11]:
 
 
 def Distance( time_sorted_chassis_df ):
@@ -546,9 +546,116 @@ def Distance( time_sorted_chassis_df ):
     time_sorted_chassis_df[ 'Distance' ] = chassis_Distance_list
 
 
+# In[12]:
+
+
+def MergeChassisDriveEvent( chassis_df, drive_event_df ):
+
+    chassis_time_array = np.array( chassis_df[ 'time' ] )
+
+    #
+
+    drive_event_time_array = np.array( drive_event_df[ 'time' ] )
+
+    drive_event_event_array = np.array( drive_event_df[ 'event' ] )
+
+    drive_event_type_array = np.array( drive_event_df[ 'type' ] )
+
+    #
+
+    chassis_num_rows = len( chassis_time_array )
+
+    chassis_event_array = np.array( [ None for index in range( chassis_num_rows ) ] )
+
+    chassis_type_array = np.array( [ None for index in range( chassis_num_rows ) ] )
+
+    #
+
+    for drive_event_time, drive_event_event, drive_event_type in zip( drive_event_time_array, drive_event_event_array,
+                                                                      drive_event_type_array ):
+
+        abs_time_diff_array = np.abs( chassis_time_array - drive_event_time )
+
+        min_abs_time_diff_array_index = np.where( abs_time_diff_array == np.min( abs_time_diff_array ) )
+
+        chassis_event_array[ min_abs_time_diff_array_index ] = drive_event_event
+
+        chassis_type_array[ min_abs_time_diff_array_index ] = drive_event_type
+
+    chassis_df[ 'DriveEvent' ] = chassis_event_array
+
+    chassis_df[ 'DriveEventType' ] = chassis_type_array
+
+
+# In[13]:
+
+
+def DistanceToNearestDisengagement( time_sorted_chassis_df ):
+
+    chassis_time_array = np.array( time_sorted_chassis_df[ 'time' ] ) * 1e-9 # seconds
+
+    chassis_speedMps_array = np.array( time_sorted_chassis_df[ 'speedMps' ] ) # meters/second
+
+    chassis_TernaryDrivingModeTransition_array = np.array( time_sorted_chassis_df[ 'TernaryDrivingModeTransition' ] )
+
+    #
+
+    chassis_deltatime_array = np.diff( chassis_time_array )
+
+    chassis_deltatime_array = np.insert( chassis_deltatime_array, 0, chassis_deltatime_array[ 0 ] )
+
+    #
+
+    chassis_deltadistance_array = chassis_deltatime_array * chassis_speedMps_array
+
+    chassis_distance_array = np.cumsum( chassis_deltadistance_array )
+
+    #
+
+    chassis_disengagement_indexes = np.where( chassis_TernaryDrivingModeTransition_array == -1 )
+
+    chassis_disengagement_distance_array = chassis_distance_array[ chassis_disengagement_indexes ]
+
+    #
+
+    if ( len( chassis_disengagement_indexes[ 0 ] ) == 0 ):
+
+        time_sorted_chassis_df[ 'DistanceToNearestDisengagement' ] = [ np.nan for index in chassis_time_array ]
+
+        return None
+
+    #
+
+    distance_to_disengagement_array_list = []
+
+    for disengagement_distance in chassis_disengagement_distance_array:
+
+        distance_to_disengagement_array = chassis_distance_array - disengagement_distance
+
+        distance_to_disengagement_array_list.append( distance_to_disengagement_array )
+
+    distance_to_disengagement_array_matrix = np.vstack( distance_to_disengagement_array_list )
+
+    chassis_DistanceToNearestDisengagement_list = []
+    
+    for colnum in range( distance_to_disengagement_array_matrix.shape[ 1 ] ):
+
+        col = distance_to_disengagement_array_matrix[ :, colnum ]
+
+        abs_col = np.abs( col )
+
+        min_abs_col_index = np.where( abs_col == np.min( abs_col ) )
+
+        DistanceToNearestDisengagement = col[ min_abs_col_index ][ 0 ]
+
+        chassis_DistanceToNearestDisengagement_list.append( DistanceToNearestDisengagement )
+
+    time_sorted_chassis_df[ 'DistanceToNearestDisengagement' ] = chassis_DistanceToNearestDisengagement_list
+
+
 # ### Functions unrelated to calculated fields but are important vvv
 
-# In[11]:
+# In[14]:
 
 
 def origin_dir():
@@ -592,7 +699,7 @@ def origin_dir():
                 return path
 
 
-# In[12]:
+# In[15]:
 
 
 def retrieve_metadata_df():
@@ -608,7 +715,7 @@ def retrieve_metadata_df():
     return metadata_df
 
 
-# In[13]:
+# In[16]:
 
 
 def list_gmIDs():
@@ -641,7 +748,7 @@ def list_gmIDs():
     return gmID_list
 
 
-# In[14]:
+# In[17]:
 
 
 def list_topics():
@@ -678,7 +785,7 @@ def list_topics():
     return topic_list
 
 
-# In[15]:
+# In[18]:
 
 
 def retrieve_gmID_topic( gmID, topic ):
@@ -715,7 +822,7 @@ def retrieve_gmID_topic( gmID, topic ):
     return gmID_topic_df
 
 
-# In[16]:
+# In[19]:
 
 
 def give_route( gmID ):
@@ -763,7 +870,7 @@ def give_route( gmID ):
         raise Exception( f'{ gmID } is not valid' )
 
 
-# In[1]:
+# In[20]:
 
 
 def list_whitelisted_gmIDs():
@@ -777,7 +884,7 @@ def list_whitelisted_gmIDs():
     return list( whitelisted_gmIDs_set )
 
 
-# In[2]:
+# In[21]:
 
 
 def list_blacklisted_gmIDs():
