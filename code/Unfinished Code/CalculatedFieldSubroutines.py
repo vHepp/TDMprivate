@@ -587,7 +587,7 @@ def MergeChassisDriveEvent( chassis_df, drive_event_df ):
     chassis_df[ 'DriveEventType' ] = chassis_type_array
 
 
-# In[13]:
+# In[3]:
 
 
 def DistanceToNearestDisengagement( time_sorted_chassis_df ):
@@ -597,6 +597,8 @@ def DistanceToNearestDisengagement( time_sorted_chassis_df ):
     chassis_speedMps_array = np.array( time_sorted_chassis_df[ 'speedMps' ] ) # meters/second
 
     chassis_TernaryDrivingModeTransition_array = np.array( time_sorted_chassis_df[ 'TernaryDrivingModeTransition' ] )
+
+    gmID = time_sorted_chassis_df[ 'groupMetadataID' ][ 0 ]
 
     #
 
@@ -620,7 +622,11 @@ def DistanceToNearestDisengagement( time_sorted_chassis_df ):
 
     if ( len( chassis_disengagement_indexes[ 0 ] ) == 0 ):
 
-        time_sorted_chassis_df[ 'DistanceToNearestDisengagement' ] = [ np.nan for index in chassis_time_array ]
+        nan_list = [ np.nan for index in chassis_time_array ]
+
+        time_sorted_chassis_df[ 'DistanceToNearestDisengagement' ] = nan_list
+
+        time_sorted_chassis_df[ 'NearestDisengagementID' ] = nan_list
 
         return None
 
@@ -637,6 +643,8 @@ def DistanceToNearestDisengagement( time_sorted_chassis_df ):
     distance_to_disengagement_array_matrix = np.vstack( distance_to_disengagement_array_list )
 
     chassis_DistanceToNearestDisengagement_list = []
+
+    chassis_NearestDisengagementID_list = []
     
     for colnum in range( distance_to_disengagement_array_matrix.shape[ 1 ] ):
 
@@ -648,9 +656,66 @@ def DistanceToNearestDisengagement( time_sorted_chassis_df ):
 
         DistanceToNearestDisengagement = col[ min_abs_col_index ][ 0 ]
 
+        NearestDisengagementID = gmID + '_' + str( int( min_abs_col_index[ 0 ][ 0 ] ) )
+
         chassis_DistanceToNearestDisengagement_list.append( DistanceToNearestDisengagement )
 
+        chassis_NearestDisengagementID_list.append( NearestDisengagementID )
+
     time_sorted_chassis_df[ 'DistanceToNearestDisengagement' ] = chassis_DistanceToNearestDisengagement_list
+
+    time_sorted_chassis_df[ 'NearestDisengagementID' ] = chassis_NearestDisengagementID_list
+
+
+# In[1]:
+
+
+def Acceleration_chassistime( time_sorted_chassis_df ):
+
+    # Made by Jasmine
+
+    speedMps_array = np.array( time_sorted_chassis_df[ 'speedMps' ] )
+
+    time_array = np.diff( np.array( time_sorted_chassis_df[ 'time' ] ) ) * 1e-9 # seconds
+
+    time_array = np.insert( time_array, 0, time_array[ 0 ] )
+
+    acceleration_list = [] # meters/second^2
+    for index in range( 1, len( speedMps_array ) ):
+
+        acceleration = ( speedMps_array[ index ] - speedMps_array[ index - 1 ] ) / time_array[ index ]
+
+        acceleration_list.append( acceleration )
+
+    acceleration_list = [ 0 ] + acceleration_list # Initial acceleration is 0
+
+    time_sorted_chassis_df[ 'Acceleration' ] = acceleration_list
+
+
+# In[2]:
+
+
+def Acceleration_bestposetime( time_sorted_merged_chassisbestpose_df ):
+
+    unique_best_pose_time_array = np.unique( np.array( time_sorted_merged_chassisbestpose_df[ 'time_y' ] ) )
+
+    acceleration_list = [] # meters/second^2
+
+    for best_pose_time in unique_best_pose_time_array:
+
+        time_sorted_merged_chassisbestpose_df_subset = time_sorted_merged_chassisbestpose_df[ time_sorted_merged_chassisbestpose_df[ 'time_y' ] == best_pose_time ]
+
+        chassis_time_array_subset = np.array( time_sorted_merged_chassisbestpose_df_subset[ 'time_x' ] ) * 1e-9 # seconds 
+
+        speedMps_array_subset = np.array( time_sorted_merged_chassisbestpose_df_subset[ 'speedMps' ] )
+
+        acceleration = ( speedMps_array_subset[ -1 ] - speedMps_array_subset[ 0 ] ) / ( chassis_time_array_subset[ -1 ] - chassis_time_array_subset[ 0 ] )
+
+        for index in range( len( time_sorted_merged_chassisbestpose_df_subset ) ):
+
+            acceleration_list.append( acceleration )
+
+    time_sorted_merged_chassisbestpose_df[ 'Acceleration' ] = acceleration_list
 
 
 # ### Functions unrelated to calculated fields but are important vvv
