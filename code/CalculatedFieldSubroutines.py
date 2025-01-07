@@ -138,14 +138,16 @@ def LatLonTotalStdDev( best_pose_df ):
     lat_stddev_lst = best_pose_df[ 'latitudeStdDev' ].tolist()
 
     lon_stddev_lst = best_pose_df[ 'longitudeStdDev' ].tolist()
+    
+    height_stddev_lst = best_pose_df[ 'heightStdDev' ].tolist()
 
-    def planar_distance( x, y ): return ( x ** 2 + y ** 2 ) ** ( 1 / 2 )
+    def planar_distance( x, y, z ): return ( x ** 2 + y ** 2 + z **2) ** ( 1 / 2 )
 
     latlon_total_stddev_lst = []
 
-    for lat_stddev, lon_stddev in zip( lat_stddev_lst, lon_stddev_lst ):
+    for lat_stddev, lon_stddev, height_stddev in zip( lat_stddev_lst, lon_stddev_lst, height_stddev_lst ):
 
-        latlon_total_stddev = planar_distance( lat_stddev, lon_stddev )
+        latlon_total_stddev = planar_distance( lat_stddev, lon_stddev , height_stddev)
 
         latlon_total_stddev_lst.append( latlon_total_stddev )
 
